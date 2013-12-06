@@ -1,0 +1,182 @@
+#page1 {
+	background: url(/static/images/beer-closeup.jpg) #A98436 no-repeat left top;
+    background-size: 100%;
+}
+
+header {
+    padding: 1px 0;            
+    background-color: rgba(0,0,0,.3);
+    background-image: linear-gradient(top, #6f3736, #4c2626);
+    position:absolute;
+    top: 0%;
+    left: 0%;
+    width:100%;
+}
+
+h1 {
+    position:relative;
+    left: 20px;
+    width:800px;
+}
+
+#stringBrewStep {
+	font-size:26pt; 
+	color:saddlebrown; 
+	text-align:center; 
+	width:300px;
+}
+   
+#borderBrewStep {
+	position:absolute;
+	top: 25%;
+	left: 42%;
+}
+
+#numericPidCv {
+	font-size:24pt; 
+	color:saddlebrown; 
+	text-align:center; 
+	width:100px;
+}
+
+#borderNumericPidCv {
+	position:absolute;
+	top: 65%;
+	left: 39%;
+}
+
+#sliderPidCv {
+	width:22px; 
+	height:100px; 
+	float:left;
+}
+
+#borderSliderPidCv {
+	position:absolute;
+	top: 50%;
+	left: 30%;
+}
+#needlePidCv {
+	width:112px; 
+	height:37px; 
+	background-image:url(/static/jmwidgets/development/examples/images/needle_bkgd_horiz_1.png);
+}
+
+#borderNeedlePidCv {
+	position:absolute;
+	top: 80%;
+	left: 35%;
+	margin-left:30px;
+}
+
+#numericPidSp {
+	font-size:24pt;
+	color:saddlebrown; 
+	text-align:center;  
+	width:100px;
+}
+
+#borderPidSp {
+	position:absolute;
+	top: 45%;
+	left: 10%;
+}
+
+#numericTemperature {
+	font-size:24pt; 
+	color:saddlebrown; 
+	text-align:center; 
+	width:130px;
+}
+
+#borderTemperature {
+	position:absolute;
+	top: 25%;
+	left: 7%;
+}
+
+#buttonStart {
+	width:75px; 
+	height:75px;
+}
+
+#borderStart {
+	margin-left:30px;
+	position:absolute;
+	top: 36%;
+	left: 38%;
+}
+
+#buttonStepInc {
+	width:75px; 
+	height:75px;
+}
+
+#borderStepInc {
+	margin-left:30px;
+	position:absolute;
+	top: 36%;
+	left: 50%;
+}
+
+#buttonReset {
+	width:75px; 
+	height:75px;
+}
+
+#borderReset {
+	margin-left:30px;
+	position:absolute;
+	top: 36%;
+	left: 62%;
+}
+
+#stringTimer {
+	font-size:26pt; 
+	color:saddlebrown; 
+	text-align:center; 
+	width:145px;
+}
+
+#borderTimer {
+	position:absolute;
+	top: 25%;
+	left: 80%;
+}
+
+#stringPidMode {
+	font-size:26pt; 
+	color:saddlebrown; 
+	text-align:center; 
+	width:140px;
+}
+
+#borderPidMode {
+	position:absolute;
+	top: 65%;
+	left: 56%;
+}
+
+#buttonPidAuto {
+	width:75px; 
+	height:75px;
+}
+
+#borderPidAuto {
+	margin-left:28px;
+	position:absolute;
+	top: 77%;
+	left: 50%;
+}
+
+#buttonPidManual {
+	width:75px; 
+	height:75px;
+}
+
+#borderPidManual {
+	margin-left:30px;
+	position:absolute;
+	top: 77%;
+	left: 62%;
+}

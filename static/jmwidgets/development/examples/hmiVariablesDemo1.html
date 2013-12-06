@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>HMI Variables Demo</title>
+
+		<!-- JMWidget styles -->
+	<link rel="stylesheet" href="../css/base/hmi.base.css">
+	<link rel="stylesheet" href="../css/hmi.base-allstyles.css">	
+		<!-- jQuery classes -->
+	<script src="../external/jquery-1.8.0.min.js"></script>
+	<script src="../external/jquery-ui-1.8.23.custom.min.js"></script>
+		<!-- JMWidget classes -->
+	<script src="../js/hmi.core.js"></script>
+	<script src="../js/hmi.widget.js"></script>
+	<script src="../js/hmi.page.js"></script>
+	<script src="../js/hmi.numeric.js"></script>
+	<script src="../js/hmi.slider.js"></script>
+	<script src="../js/hmi.variables.js"></script>
+	<script src="../js/jq.hmi.core.js"></script>
+	<script src="../js/jq.hmi.widget.js"></script>
+	<script src="../js/jq.hmi.page.js"></script>
+	<script src="../js/jq.hmi.numeric.js"></script>
+	<script src="../js/jq.hmi.slider.js"></script>
+	<script src="../js/jq.hmi.variables.js"></script>
+					
+	<script>
+	$(function() {
+		$('#page1').hmiPage();
+		$("#numeric1").hmiNumeric({rw:'rw'});		
+		$("#slider1").hmiSlider({type:'horiz' });	
+			// initialize the hmiVariables widget is one variable with an intial value of 0
+		$("#variables1").hmiVariables({field1:0});	
+			// attach numeric and slider to the variables data source to show changing values
+		$("#numeric1").hmiAttach("#variables1", {tag:'field1', rw:'rw', attr:'value'});	
+		$("#slider1").hmiAttach("#variables1", {tag:'field1', rw:'rw', attr:'value'});	
+	});
+	</script>
+</head>
+<body id="page1">
+	<div id="variables1"></div>
+	<br >
+	<div id="numeric1" style="font-size:36pt; width:150px" >000</div>
+	<br ><br >
+	<div id="slider1" style="width:150px; height:30px"></div>
+	<br ><br ><br >
+	<div><i>click on the number to set value from keyboard</i></div>
+	<br >
+	<div><i>data between the Numeric widget and Slider widget are passed through the <b>hmiVariables</b> widget</i></div>
+</body>
+</html>

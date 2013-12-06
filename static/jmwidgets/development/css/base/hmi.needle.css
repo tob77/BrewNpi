@@ -1,0 +1,16 @@
+/**
+ * JMwidgets 
+ * Copyright (c) 2012, Exor International, Inc. & BitMethods, Inc.
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://www.jmwidgets.com
+ */
+ 
+.hmi-needle {   } 
+.hmi-needle-round {  background-size:100% 100%; background-repeat:no-repeat; position:relative; border-radius: 50%;  }
+.hmi-needle-round canvas {display:block; background-image:url(images/needle_round_1.png);  background-position:5px 5px; background-repeat:no-repeat; }
+
+.hmi-needle-vert {  background-size:100% 100%; background-repeat:no-repeat; position:relative; }
+.hmi-needle-vert-ne { position:absolute; background-image:url(images/needle_vert_right1.png); background-repeat:no-repeat; height:15px; width:60%; background-size:100% 100%}
+
+.hmi-needle-horiz {  background-size:100% 100%; background-repeat:no-repeat; position:relative; }
+.hmi-needle-horiz-ne { position:absolute; background-image:url(images/needle_horiz_up1.png); background-repeat:no-repeat; height:60%; width:15px; background-size:100% 100%}

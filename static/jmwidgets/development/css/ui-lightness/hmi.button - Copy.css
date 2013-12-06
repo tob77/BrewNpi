@@ -1,0 +1,10 @@
+
+.hmi-btn {  font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif; font-size: 1.1em; color: #fff; position:relative;  } 
+.hmi-btn-round {background: red url(images/btn_shiney_round.png) 0 0 no-repeat;  background-size:200% 100%; -moz-background-size:200% 100%; border: 0; border-radius: 50%; -moz-border-radius: 50%; padding: 0.8em 0.4em; min-width:3em;  min-height:1.2em;}
+.hmi-btn-roundbar-s {background: red url(images/btn_shiney_roundbar-s.png) 0 0 no-repeat;  background-size:200% 100%; -moz-background-size: 200% 100%; border: 0; border-radius: 50px; -moz-border-radius: 50px; padding: 0.8em 1.1em;}
+.hmi-btn-roundbar-m {background: red url(images/btn_shiney_roundbar-m.png) 0 0 no-repeat;  background-size:200% 100%; -moz-background-size: 200% 100%; border: 0; border-radius: 50px; -moz-border-radius: 50px; padding: 0.8em 1.1em;}
+.hmi-btn-roundbar-l {background: red url(images/btn_shiney_roundbar-l.png) 0 0 no-repeat;  background-size:200% 100%; -moz-background-size: 200% 100%; border: 0; border-radius: 50px; -moz-border-radius: 50px; padding: 0.8em 1.1em;}
+
+
+.hmi-shiney-roundbar-up { height:100%; padding-left:50px; padding-right:50px; background: url(images/shiney_roundbar_1a.png) left top no-repeat, url(images/shiney_roundbar_1c.png) right top no-repeat,  url(images/btn_shiney_roundbar_1b.png) left top repeat-x content-box; background-size:50px 100%, 50px 100%, auto 100%;  border: 0; border-radius: 50px; -moz-border-radius: 50px; }
+.hmi-btn-roundbar-not {background: red; border: 0; border-radius: 50px; -moz-border-radius: 50px; padding:0 0 0 0; width:auto; }

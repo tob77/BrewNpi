@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>JMobile CGI Group Data Widget Example</title>
+
+		<!-- JMWidget styles -->
+	<link rel="stylesheet" href="../css/base/hmi.base.css">
+	<link rel="stylesheet" href="../css/hmi.base-allstyles.css">	
+		<!-- jQuery classes -->
+	<script src="../external/jquery-1.8.0.min.js"></script>
+	<script src="../external/jquery-ui-1.8.23.custom.min.js"></script>
+		<!-- JMWidget classes -->
+	<script src="../js/hmi.core.js"></script>
+	<script src="../js/hmi.widget.js"></script>
+	<script src="../js/hmi.page.js"></script>
+	<script src="../js/hmi.numeric.js"></script>
+	<script src="../js/hmi.cgigroup.js"></script>	
+	<script src="../js/jmobile.cgigroup.js"></script>
+	<script src="../js/jq.hmi.core.js"></script>
+	<script src="../js/jq.hmi.widget.js"></script>
+	<script src="../js/jq.hmi.page.js"></script>
+	<script src="../js/jq.hmi.numeric.js"></script>
+	<script src="../js/jq.jmobile.cgigroup.js"></script>
+					
+	<script>
+	$(function() {
+		$('#page1').hmiPage();
+		$("#numeric1").hmiNumeric({rw:'rw'});		
+			// initialize the hmiVariables widget is one variable with an intial value of 0
+		$("#jm1").jmobileCgiGroup({enabled:0, tag1:0});	
+			// attach numeric and slider to the variables data source to show changing values
+		$("#numeric1").hmiAttach("#jm1", {tag:'tag1', rw:'rw', attr:'value'});	
+	});
+	</script>
+</head>
+<body id="page1">
+	<div id="jm1"></div>
+	<br >
+	<div id="numeric1" style="font-size:36pt; width:150px" >000</div>
+	<br ><br ><br >
+	<div><i>This demo is provided to show the widget initialization source code.  Connection to a real device is disabled.</i></div>
+	<div><i>With this demo, data from the Numeric widget are read and written from/to device using the <b>jmobileCgiGroup</b> widget</i></div>
+	<div><i>Click on the number to change its value.</i></div>
+	<br >
+
+</body>
+</html>

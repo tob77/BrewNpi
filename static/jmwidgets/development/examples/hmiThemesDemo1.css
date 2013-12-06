@@ -1,0 +1,14 @@
+
+@font-face {
+	font-family: 'TitilliumText22LMedium';
+	src: url('TitilliumText22L004-webfont.eot');
+	src: local('?'), url('fonts/TitilliumText22L004-webfont.woff') format('woff'), url('fonts/TitilliumText22L004-webfont.ttf') format('truetype'), url('fonts/TitilliumText22L004-webfont.svg#webfontQGJ54wfV') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.themetable { }
+.themetable td { padding-bottom:20px; padding-top:20px }
+
+.wgtrow {height:300px; text-align:center; vertical-align:top; }
+.labelrow {text-align:left; font-family:'TitilliumText22LMedium',Arial,sans-serif; color:#5073A9; font-size:20pt }

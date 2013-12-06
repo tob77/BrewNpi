@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>HMI Themes Demo 1</title>
+
+		<!-- JMWidget styles -->
+	<link rel="stylesheet" href="../css/base/hmi.base.css">
+	<link rel="stylesheet" href="../css/hmi.base-allstyles.css">	
+		<!-- theme css file -->
+	<link class="themelink" rel="stylesheet" href="">	
+		<!-- jQuery classes -->
+	<script src="../external/jquery-1.8.0.min.js"></script>
+	<script src="../external/jquery-ui-1.8.23.custom.min.js"></script>
+		<!-- JMWidget classes -->
+	<script src="../js/hmi.core.js"></script>
+	<script src="../js/hmi.fx.js"></script>
+	<script src="../js/hmi.widget.js"></script>
+	<script src="../js/hmi.page.js"></script>
+	<script src="../js/hmi.border.js"></script>
+	<script src="../js/hmi.button.js"></script>
+	<script src="../js/hmi.numeric.js"></script>
+	<script src="../js/hmi.datetime.js"></script>
+	<script src="../js/hmi.msgtext.js"></script>
+	<script src="../js/hmi.indicator.js"></script>
+	<script src="../js/hmi.needle.js"></script>
+	<script src="../js/hmi.knob.js"></script>
+	<script src="../js/hmi.bargraph.js"></script>
+	<script src="../js/hmi.slider.js"></script>
+	<script src="../js/hmi.analogclock.js"></script>
+	<script src="../js/hmi.variables.js"></script>
+	<script src="../js/jq.hmi.core.js"></script>
+	<script src="../js/jq.hmi.widget.js"></script>
+	<script src="../js/jq.hmi.page.js"></script>
+	<script src="../js/jq.hmi.border.js"></script>
+	<script src="../js/jq.hmi.button.js"></script>
+	<script src="../js/jq.hmi.numeric.js"></script>
+	<script src="../js/jq.hmi.datetime.js"></script>
+	<script src="../js/jq.hmi.msgtext.js"></script>
+	<script src="../js/jq.hmi.indicator.js"></script>
+	<script src="../js/jq.hmi.needle.js"></script>
+	<script src="../js/jq.hmi.knob.js"></script>
+	<script src="../js/jq.hmi.bargraph.js"></script>
+	<script src="../js/jq.hmi.slider.js"></script>
+	<script src="../js/jq.hmi.analogclock.js"></script>
+	<script src="../js/jq.hmi.variables.js"></script>
+
+	<script>
+	$(function() {
+		$("#themecombo").bind('change', function() { 
+			$("link.themelink").attr("href", $(this).attr('value'));
+			return false;
+		});
+		$("#themecombo").val('Default');
+		 
+		$("#page1").hmiPage();		
+			// row 1
+		$("#bdr1a").hmiBorder({shape:'round', fx:'float' });		
+		$("#btn1").hmiButton({shape:'round', radius:'50%' });		
+		$("#bdr1b").hmiBorder({shape:'rect', fx:'float' });		
+		$("#light1").hmiIndicator({shape:'rect', colors:['none','yellow','lime'] });		
+		$("#numeric1").hmiNumeric( {fx:'float'} );	
+			// row 2
+		$("#knob1").hmiKnob( {shape:'round', startAngle:45, stopAngle:135, min:0, max:2, fx:'float' } );		
+		$("#slider1").hmiSlider( {type:'vert', value:50, min:0, max:100 } );		
+		$("#slider2").hmiSlider( {type:'horiz', value:50, min:0, max:100 } );		
+		$("#bdr3a").hmiBorder( { shape:'round', glass:'clock1', fx:'float'}  );		
+		$("#clock1").hmiAnalogClock(  );	
+			// row 3
+		$("#bdr2a").hmiBorder( {shape:'round', style:'gauge1', fx:'float'} );		
+		$("#needle1").hmiNeedle( {type:'round', startAngle:25, stopAngle:155, ctr:{dy:31} } ) ;		
+		$("#bdr2b").hmiBorder( {shape:'vert', style:'gauge1', fx:'float' } );		
+		$("#needle2").hmiNeedle( {type:'vert' } );		
+		$("#bdr2c").hmiBorder( {shape:'horiz', style:'gauge1', fx:'float' } );		
+		$("#needle3").hmiNeedle( {type:'horiz', align:'bottom' } );		
+		$("#bar1").hmiBarGraph( {type:'vert', value:100, } );		
+		$("#bar2").hmiBarGraph( {type:'horiz', value:100, } );		
+			// data	
+		$("#variables1").hmiVariables( {tag1:0, tag2:0, tag3:0} );		
+			// attach widgets to data
+		$("#needle1").hmiAttach("#variables1", {tag:'tag1'} );
+		$("#needle2").hmiAttach("#variables1", {tag:'tag1'} );
+		$("#needle3").hmiAttach("#variables1", {tag:'tag2'} );
+		$("#numeric1").hmiAttach("#variables1", {tag:'tag1'} );
+		$("#bar1").hmiAttach("#variables1", {tag:'tag1'} );
+		$("#bar2").hmiAttach("#variables1", {tag:'tag2'} );
+		$("#slider1").hmiAttach("#variables1", {tag:'tag1', rw:'rw'} );
+		$("#slider2").hmiAttach("#variables1", {tag:'tag2', rw:'rw'} );
+		$("#light1").hmiAttach("#variables1", {tag:'tag3'} );
+		$("#knob1").hmiAttach("#variables1", {tag:'tag3', rw:'rw'} );
+		
+	});
+	</script>
+</head>
+<body id="page1" style="font:14pt Sans-serif" width="700px">
+	<br >
+	<div style="width:100%;" align="center">Theme:&nbsp;&nbsp;
+	<select id="themecombo" style="width:200px; height:30px; font-size:16pt" >
+		<option value="">Default</a></option>
+		<option value="../css/chrome/hmi.base.css">Chrome</a></option>
+		<option value="../css/gold/hmi.base.css">Gold</a></option>
+		<option value="../css/copper/hmi.base.css">Copper</a></option>
+		<option value="../css/blpl/hmi.base.css">Black Plastic</a></option>
+		<option value="../css/whpl/hmi.base.css">White Plastic</a></option>
+	</select>
+	</div>
+	<br >
+	<br >
+	<table class="themetable" style="width:100%"> 
+		<tr class="labelrow">
+			<td style="width:30%" >
+				Buttons
+			</td>
+			<td style="width:45%" >
+				Lights
+			</td>
+			<td style="width:25%" >
+				Numerics
+			</td>
+		</tr>
+		<tr class="wgtrow">
+			<td   class="wgtcell">
+				<div id="bdr1a">
+					<button id="btn1" style="width:80px; height:80px">Button</button>
+				</div>
+			</td>
+			<td  class="wgtcell">
+				<div id="bdr1b">
+					<div id="light1" style="width:50px; height:50px"></div>
+				</div>
+			</td>
+			<td  class="wgtcell">
+				<div id="numeric1">999</div>
+			</td>
+		</tr>
+
+		<tr class="labelrow">
+			<td >
+				Knobs
+			</td>
+			<td  >
+				Sliders
+			</td>
+			<td  >
+				Clocks
+			</td>
+		</tr>
+		<tr class="wgtrow">
+			<td  >
+				<div id="knob1" style="width:125px; height:125px"></div>
+			</td>
+			<td >
+				<div class="hmi-fx-float" style="display:inline-block">
+				<div id="slider1" style="width:30px; height:100px; float:left"></div>
+				<div id="slider2" style="width:120px; height:30px; float:left; margin-left:30px; margin-top:25px" ></div>
+				</div>
+			</td>
+			<td >
+				<div id="bdr3a">
+					<div id="clock1" style="width:100px; height:100px; "></div>
+				</div>
+			</td>
+		</tr>
+		
+		<tr class="labelrow">
+			<td >
+				Gauges
+			</td>
+			<td  >
+				
+			</td>
+			<td  >
+				Bargraphs
+			</td>
+		</tr>
+		<tr class="wgtrow">
+			<td  >
+				<div id="bdr2a">
+					<div id="needle1" style="width:120px; height:120px; background-image:url(images/needle_bkgd_round_1.png)"></div>
+				</div>
+			</td>
+			<td >
+				<div id="bdr2b" style="float:left">
+					<div id="needle2" style="width:50px; height:110px; background-image:url(images/needle_bkgd_vert_1.png)"></div>
+				</div>
+				<div id="bdr2c" style="float:left; margin-left:20px; margin-top:25px">
+					<div id="needle3" style="width:120px; height:40px; background-image:url(images/needle_bkgd_horiz_1.png)"></div>
+				</div>
+			</td>
+			<td >
+				<div class="hmi-fx-float" style="display:inline-block">
+				<div id="bar1" style="width:30px; height:80px; float:left"></div>
+				<div id="bar2" style="width:80px; height:30px; float:left; margin-left:20px; margin-top:25px"></div>
+				</div>
+			</td>
+		</tr>			
+			
+	</table>
+	<div id="variables1"></div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+/**
+ * JMwidgets 
+ * Copyright (c) 2012, Exor International, Inc. & BitMethods, Inc.
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://www.jmwidgets.com
+ */
+ 
+.hmi-slider-horiz {margin-left:25px; margin-right:25px; padding-left:10px; padding-right:10px; background: url(images/sldr_horiz_copper_a.png) left top no-repeat, url(images/sldr_horiz_copper_c.png) right top no-repeat,  url(images/sldr_horiz_copper_b.png) left top repeat-x content-box; background-size:auto 100%; border-radius:0;}
+
+.hmi-slider-vert {margin-top:25px; margin-bottom:25px; padding-top:10px; padding-bottom:10px; background: url(images/sldr_vert_copper_a.png) left top no-repeat, url(images/sldr_vert_copper_c.png) left bottom no-repeat,  url(images/sldr_vert_copper_b.png) left top repeat-y content-box; background-size:100% auto; border-radius:0;}

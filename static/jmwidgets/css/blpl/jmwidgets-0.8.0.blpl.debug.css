@@ -1,0 +1,24 @@
+/*!
+ * JMwidgets 
+ * Copyright (c) 2012, Exor International, Inc. & BitMethods, Inc.
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://www.jmwidgets.com
+ */
+  
+.hmi-bdr-round { position:relative; padding: 21px; background: url(images/bdr_round_blpl.png) 0 0 no-repeat;  background-size:100% 100%; }
+.hmi-bdr-rect { position:relative; padding:  21px 20px; background: url(images/bdr_rect_blpl_a.png) left top no-repeat, url(images/bdr_rect_blpl_c.png) right top no-repeat, url(images/bdr_rect_blpl_b.png) 21px top no-repeat;  background-size:21px 100%, 20px 100%, 150px 100%; }
+.hmi-bdr-rrect { position:relative; padding: 20.01px 20px; background: url(images/bdr_rrect_blpl_a.png) left top no-repeat, url(images/bdr_rrect_blpl_c.png) right top no-repeat, url(images/bdr_rrect_blpl_b.png) 37px top no-repeat;  background-size:37px 100%, 37px 100%, 150px 100%;  }
+
+.hmi-bdr-round-gauge1 { padding: 8px 16px 30px 13px; background: url(images/bdr_round_gaugeblpl1.png) 0 0 no-repeat;  background-size:100% 100%; }
+.hmi-bdr-vert-gauge1 { padding: 14px 20px 39px 18px; background: url(images/bdr_vert_gaugeblpl1.png) 0 0 no-repeat; background-size:90px 175px;   }
+.hmi-bdr-horiz-gauge1 { padding: 16px 18px 40px 12px; background: url(images/bdr_horiz_gaugeblpl1.png) 0 0 no-repeat; background-size:175px 100px; }
+/**
+ * JMwidgets 
+ * Copyright (c) 2012, Exor International, Inc. & BitMethods, Inc.
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://www.jmwidgets.com
+ */
+ 
+.hmi-slider-horiz {margin-left:25px; margin-right:25px; padding-left:12px; padding-right:12px; background: url(images/sldr_horiz_blpl_a.png) left top no-repeat, url(images/sldr_horiz_blpl_c.png) right top no-repeat,  url(images/sldr_horiz_blpl_b.png) left top repeat-x content-box; background-size:auto 100%; border-radius:0; }
+
+.hmi-slider-vert {margin-top:25px; margin-bottom:25px; padding-top:12px; padding-bottom:12px; background: url(images/sldr_vert_blpl_a.png) left top no-repeat, url(images/sldr_vert_blpl_c.png) left bottom no-repeat,  url(images/sldr_vert_blpl_b.png) left top repeat-y content-box; background-size:100% auto; border-radius:0; }

@@ -1,0 +1,10 @@
+/**
+ * JMwidgets 
+ * Copyright (c) 2012, Exor International, Inc. & BitMethods, Inc.
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://www.jmwidgets.com
+ */
+ 
+.hmi-knob {   } 
+.hmi-knob-round {  background-size:100% 100%; background-repeat:no-repeat;  }
+.hmi-knob-round canvas {display:block; background-image:url(images/knob_round_blkpl.png); background-position:51.15px 40.15px;  background-repeat:no-repeat;}

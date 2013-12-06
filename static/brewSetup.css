@@ -1,0 +1,580 @@
+#page1 {
+    background: url(/static/images/beer-closeup.jpg) #A98436 no-repeat left top;
+    background-size: 100%;
+}
+
+header {
+    padding: 1px 0;            
+    background-color: rgba(0,0,0,.3);
+    background-image: linear-gradient(top, #6f3736, #4c2626);
+    position:absolute;
+    top: 0%;
+    left: 0%;
+    width:100%;
+    height:75px;
+}
+
+nav {
+    position:relative;
+    top: 35px;
+}
+
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	padding-top:6px;
+	padding-bottom:6px;
+}
+
+li {
+	display:inline;
+}
+
+a:link,a:visited {
+	color:black;
+	background-color:rgba(0,0,0,.2);
+	text-align:center;
+	padding:6px;
+	text-decoration:none;
+}
+
+a:hover,a:active {
+	background-color:rgba(0,0,0,.3);
+}
+
+#headerTitle {
+    position:absolute;
+    top: 5px;
+    left: 20%;
+    font-size:20pt; 
+	color:black;
+}
+
+#tempSpLabel {
+	position:absolute;
+	font-size:14pt; 
+	color:#67401D;
+	top: 85px;
+	left: 200px;
+}
+
+#timeSpLabel {
+	position:absolute;
+	font-size:14pt; 
+	color:#67401D;
+	top: 85px;
+	left: 305px;
+}
+
+#cvSpLabel {
+	position:absolute;
+	font-size:14pt; 
+	color:#67401D;
+	top: 85px;
+	left: 437px;
+}
+
+#strikeLabel {
+	position:absolute;
+	font-size:14pt; 
+	color:#67401D;
+	text-align:right;
+	top: 118px;
+	right: 790px;
+}
+
+#numericStrikeTempSp {
+	font-size:16pt;
+	color:saddlebrown; 
+	text-align:center;  
+	width:75px;
+}
+
+#borderStrikeTempSp {
+	position:absolute;
+	top: 110px;
+	left: 200px;
+}
+
+
+
+#acidMashLabel {
+	position:absolute;
+	font-size:14pt; 
+	color:#67401D;
+	text-align:right;
+	top: 168px;
+	right: 790px;
+}
+
+#numericAcidMashTempSp {
+	font-size:16pt;
+	color:saddlebrown; 
+	text-align:center;  
+	width:75px;
+}
+
+#borderAcidMashTempSp {
+	position:absolute;
+	top: 160px;
+	left: 200px;
+}
+
+#numericAcidMashTimeSp {
+	font-size:16pt;
+	color:saddlebrown; 
+	text-align:center;  
+	width:75px;
+}
+
+#borderAcidMashTimeSp {
+	position:absolute;
+	top: 160px;
+	left: 310px;
+}
+
+
+
+#proteinMashLabel {
+	position:absolute;
+	font-size:14pt; 
+	color:#B87333;
+	text-align:right;
+	top: 218px;
+	right: 790px;
+}
+
+#numericProteinMashTempSp {
+	font-size:16pt;
+	color:saddlebrown; 
+	text-align:center;  
+	width:75px;
+}
+
+#borderProteinMashTempSp {
+	position:absolute;
+	top: 210px;
+	left: 200px;
+}
+
+#numericProteinMashTimeSp {
+	font-size:16pt;
+	color:saddlebrown; 
+	text-align:center;  
+	width:75px;
+}
+
+#borderProteinMashTimeSp {
+	position:absolute;
+	top: 210px;
+	left: 310px;
+}
+
+
+
+#sacchMashLabel {
+	position:absolute;
+	font-size:14pt; 
+	color:#B87333;
+	text-align:right;
+	top: 268px;
+	right: 790px;
+}
+
+#numericSacchMashTempSp {
+	font-size:16pt;
+	color:saddlebrown; 
+	text-align:center;  
+	width:75px;
+}
+
+#borderSacchMashTempSp {
+	position:absolute;
+	top: 260px;
+	left: 200px;
+}
+
+#numericSacchMashTimeSp {
+	font-size:16pt;
+	color:saddlebrown; 
+	text-align:center;  
+	width:75px;
+}
+
+#borderSacchMashTimeSp {
+	position:absolute;
+	top: 260px;
+	left: 310px;
+}
+
+
+
+#sacch2MashLabel {
+	position:absolute;
+	font-size:14pt; 
+	color:#B87333;
+	text-align:right;
+	top: 318px;
+	right: 790px;
+}
+
+#numericSacch2MashTempSp {
+	font-size:16pt;
+	color:saddlebrown; 
+	text-align:center;  
+	width:75px;
+}
+
+#borderSacch2MashTempSp {
+	position:absolute;
+	top: 310px;
+	left: 200px;
+}
+
+#numericSacch2MashTimeSp {
+	font-size:16pt;
+	color:saddlebrown; 
+	text-align:center;  
+	width:75px;
+}
+
+#borderSacch2MashTimeSp {
+	position:absolute;
+	top: 310px;
+	left: 310px;
+}
+
+
+
+#mashOutLabel {
+	position:absolute;
+	font-size:14pt; 
+	color:#B87333;
+	text-align:right;
+	top: 368px;
+	right: 790px;
+}
+
+#numericMashOutTempSp {
+	font-size:16pt;
+	color:saddlebrown; 
+	text-align:center;  
+	width:75px;
+}
+
+#borderMashOutTempSp {
+	position:absolute;
+	top: 360px;
+	left: 200px;
+}
+
+#numericMashOutTimeSp {
+	font-size:16pt;
+	color:saddlebrown; 
+	text-align:center;  
+	width:75px;
+}
+
+#borderMashOutTimeSp {
+	position:absolute;
+	top: 360px;
+	left: 310px;
+}
+
+
+
+#hotBreakLabel {
+	position:absolute;
+	font-size:14pt; 
+	color:#B87333;
+	text-align:right;
+	top: 418px;
+	right: 790px;
+}
+
+#numericHotBreakTempSp {
+	font-size:16pt;
+	color:saddlebrown; 
+	text-align:center;  
+	width:75px;
+}
+
+#borderHotBreakTempSp {
+	position:absolute;
+	top: 410px;
+	left: 200px;
+}
+
+#numericHotBreakTimeSp {
+	font-size:16pt;
+	color:saddlebrown; 
+	text-align:center;  
+	width:75px;
+}
+
+#borderHotBreakTimeSp {
+	position:absolute;
+	top: 410px;
+	left: 310px;
+}
+
+#numericHotBreakCvSp {
+	font-size:16pt;
+	color:saddlebrown; 
+	text-align:center;  
+	width:75px;
+}
+
+#borderHotBreakCvSp {
+	position:absolute;
+	top: 410px;
+	left: 420px;
+}
+
+
+
+#boilLabel {
+	position:absolute;
+	font-size:14pt; 
+	color:#B87333;
+	text-align:right;
+	top: 468px;
+	right: 790px;
+}
+
+#numericBoilTimeSp {
+	font-size:16pt;
+	color:saddlebrown; 
+	text-align:center;  
+	width:75px;
+}
+
+#borderBoilTimeSp {
+	position:absolute;
+	top: 460px;
+	left: 310px;
+}
+
+#numericBoilCvSp {
+	font-size:16pt;
+	color:saddlebrown; 
+	text-align:center;  
+	width:75px;
+}
+
+#borderBoilCvSp {
+	position:absolute;
+	top: 460px;
+	left: 420px;
+}
+
+
+
+#hopStandLabel {
+	position:absolute;
+	font-size:14pt; 
+	color:#B87333;
+	text-align:right;
+	top: 518px;
+	right: 790px;
+}
+
+#numericHopStandTempSp {
+	font-size:16pt;
+	color:saddlebrown; 
+	text-align:center;  
+	width:75px;
+}
+
+#borderHopStandTempSp {
+	position:absolute;
+	top: 510px;
+	left: 200px;
+}
+
+#numericHopStandTimeSp {
+	font-size:16pt;
+	color:saddlebrown; 
+	text-align:center;  
+	width:75px;
+}
+
+#borderHopStandTimeSp {
+	position:absolute;
+	top: 510px;
+	left: 310px;
+}
+
+
+
+#counterFlowLabel {
+	position:absolute;
+	font-size:14pt; 
+	color:#B87333;
+	text-align:right;
+	top: 568px;
+	right: 790px;
+}
+
+#numericCounterFlowTempSp {
+	font-size:16pt;
+	color:saddlebrown; 
+	text-align:center;  
+	width:75px;
+}
+
+#borderCounterFlowTempSp {
+	position:absolute;
+	top: 560px;
+	left: 200px;
+}
+
+
+
+#pidKpSpLabel {
+	position:absolute;
+	font-size:14pt; 
+	color:#67401D;
+	top: 135px;
+	left: 615px;
+}
+
+#pidKiSpLabel {
+	position:absolute;
+	font-size:14pt; 
+	color:#67401D;
+	top: 135px;
+	left: 725px;
+}
+
+#pidKdSpLabel {
+	position:absolute;
+	font-size:14pt; 
+	color:#67401D;
+	top: 135px;
+	left: 835px;
+}
+
+#numericPidKpSp {
+	font-size:16pt;
+	color:saddlebrown; 
+	text-align:center;  
+	width:75px;
+}
+
+#borderPidKpSp {
+	position:absolute;
+	top: 160px;
+	left: 600px;
+}
+
+#numericPidKiSp {
+	font-size:16pt;
+	color:saddlebrown; 
+	text-align:center;  
+	width:75px;
+}
+
+#borderPidKiSp {
+	position:absolute;
+	top: 160px;
+	left: 710px;
+}
+
+#numericPidKdSp {
+	font-size:16pt;
+	color:saddlebrown; 
+	text-align:center;  
+	width:75px;
+}
+
+#borderPidKdSp {
+	position:absolute;
+	top: 160px;
+	left: 820px;
+}
+
+#pidDbSpLabel {
+	position:absolute;
+	font-size:14pt; 
+	color:#67401D;
+	top: 235px;
+	left: 595px;
+}
+
+#cvMinSpLabel {
+	position:absolute;
+	font-size:14pt; 
+	color:#67401D;
+	top: 235px;
+	left: 710px;
+}
+
+#cvMaxSpLabel {
+	position:absolute;
+	font-size:14pt; 
+	color:#67401D;
+	top: 235px;
+	left: 820px;
+}
+
+#numericPidDbSp {
+	font-size:16pt;
+	color:saddlebrown; 
+	text-align:center;  
+	width:75px;
+}
+
+#borderPidDbSp {
+	position:absolute;
+	top: 260px;
+	left: 600px;
+}
+
+#numericCvMinSp {
+	font-size:16pt;
+	color:saddlebrown; 
+	text-align:center;  
+	width:75px;
+}
+
+#borderCvMinSp {
+	position:absolute;
+	top: 260px;
+	left: 710px;
+}
+
+#numericCvMaxSp {
+	font-size:16pt;
+	color:saddlebrown; 
+	text-align:center;  
+	width:75px;
+}
+
+#borderCvMaxSp {
+	position:absolute;
+	top: 260px;
+	left: 820px;
+}
+
+#shutOffTempSpLabel {
+	position:absolute;
+	font-size:14pt; 
+	color:#67401D;
+	top: 335px;
+	left: 625px;
+}
+
+#numericShutOffTempSp {
+	font-size:16pt;
+	color:saddlebrown; 
+	text-align:center;  
+	width:75px;
+}
+
+#borderShutOffTempSp {
+	position:absolute;
+	top: 360px;
+	left: 710px;
+}

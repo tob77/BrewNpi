@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>HMI Border Demo 1</title>
+
+		<!-- JMWidget styles -->
+	<link rel="stylesheet" href="../css/base/hmi.base.css">
+	<link rel="stylesheet" href="../css/hmi.base-allstyles.css">	
+		<!-- jQuery classes -->
+	<script src="../external/jquery-1.8.0.min.js"></script>
+	<script src="../external/jquery-ui-1.8.23.custom.min.js"></script>
+		<!-- JMWidget classes -->
+	<script src="../js/hmi.core.js"></script>
+	<script src="../js/hmi.fx.js"></script>
+	<script src="../js/hmi.widget.js"></script>
+	<script src="../js/hmi.border.js"></script>
+	<script src="../js/hmi.button.js"></script>
+	<script src="../js/jq.hmi.core.js"></script>
+	<script src="../js/jq.hmi.widget.js"></script>
+	<script src="../js/jq.hmi.border.js"></script>
+	<script src="../js/jq.hmi.button.js"></script>
+
+	<script>
+	$(function() {
+		$("#btn1").hmiButton({shape:'rrect' });	
+		$("#btn1-bdr").hmiBorder({shape:'rrect' });	
+	});
+	</script>
+</head>
+<body id="page1" >
+	<br >
+	<div id="btn1-bdr">
+		<button id="btn1" style="width:200px; height:100px">Button</button>
+	</div>
+	<br >
+</body>
+</html>

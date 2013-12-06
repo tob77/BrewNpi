@@ -1,0 +1,246 @@
+#page1 {
+    background: url(/static/images/beer-closeup.jpg) #A98436 no-repeat left top;
+    background-size: 100%;
+}
+
+header {
+    padding: 1px 0;            
+    background-color: rgba(0,0,0,.3);
+    background-image: linear-gradient(top, #6f3736, #4c2626);
+    position:absolute;
+    top: 0%;
+    left: 0%;
+    width:100%;
+    height:75px;
+}
+
+nav {
+    position:relative;
+    top: 35px;
+}
+
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	padding-top:6px;
+	padding-bottom:6px;
+}
+
+li {
+	display:inline;
+}
+
+a:link,a:visited {
+	color:black;
+	background-color:rgba(0,0,0,.2);
+	text-align:center;
+	padding:6px;
+	text-decoration:none;
+}
+
+a:hover,a:active {
+	background-color:rgba(0,0,0,.3);
+}
+
+#headerTitle {
+    position:absolute;
+    top: 5px;
+    left: 20%;
+    font-size:20pt; 
+	color:black;
+}
+
+#timerLabel {
+	position:absolute;
+	font-size:14pt; 
+	color:#67401D;
+	top: 85px;
+	left: 825px;
+}
+
+#stringTimer {
+	margin-top:3px;
+	font-size:26pt; 
+	color:saddlebrown; 
+	text-align:center; 
+	width:145px;
+	height:42px;
+}
+
+#borderTimer {
+	position:absolute;
+	top: 107px;
+	left: 800px;
+}
+
+#temperatureLabel {
+	position:absolute;
+	font-size:14pt; 
+	color:#67401D;
+	top: 180px;
+	left: 805px;
+}
+
+#numericTemperature {
+	font-size:24pt; 
+	color:saddlebrown; 
+	text-align:center; 
+	width:145px;
+}
+
+#borderTemperature {
+	position:absolute;
+	top: 205px;
+	left: 800px;
+}
+
+#stringBurnerStatus {
+	font-size:26pt; 
+	color:saddlebrown; 
+	text-align:center; 
+	width:190px;
+}
+   
+#borderBurnerStatus {
+	position:absolute;
+	top: 107px;
+	left: 42px;
+}
+
+#buttonBurnerStart {
+	width:75px; 
+	height:75px;
+}
+
+#borderBurnerStart {
+	margin-left:30px;
+	position:absolute;
+	top: 173px;
+	left: 10px;
+}
+
+#buttonBurnerStop {
+	width:75px; 
+	height:75px;
+}
+
+#borderBurnerStop {
+	margin-left:30px;
+	position:absolute;
+	top: 173px;
+	left: 120px;
+}
+
+#stringWaterValveStatus {
+	font-size:26pt; 
+	color:saddlebrown; 
+	text-align:center; 
+	width:190px;
+}
+   
+#borderWaterValveStatus {
+	position:absolute;
+	top: 320px;
+	left: 42px;
+}
+
+#buttonWaterValveOpen {
+	width:75px; 
+	height:75px;
+}
+
+#borderWaterValveOpen {
+	margin-left:30px;
+	position:absolute;
+	top: 386px;
+	left: 10px;
+}
+
+#buttonWaterValveClose {
+	width:75px; 
+	height:75px;
+}
+
+#borderWaterValveClose {
+	margin-left:30px;
+	position:absolute;
+	top: 386px;
+	left: 120px;
+}
+
+#stringPumpStatus {
+	font-size:26pt; 
+	color:saddlebrown; 
+	text-align:center; 
+	width:190px;
+}
+   
+#borderPumpStatus {
+	position:absolute;
+	top: 107px;
+	left: 402px;
+}
+
+#buttonPumpStart {
+	width:75px; 
+	height:75px;
+}
+
+#borderPumpStart {
+	margin-left:30px;
+	position:absolute;
+	top: 173px;
+	left: 370px;
+}
+
+#buttonPumpStop {
+	width:75px; 
+	height:75px;
+}
+
+#borderPumpStop {
+	margin-left:30px;
+	position:absolute;
+	top: 173px;
+	left: 480px;
+}
+
+#stringLogStatus {
+	font-size:26pt; 
+	color:saddlebrown; 
+	text-align:center; 
+	width:190px;
+}
+   
+#borderLogStatus {
+	position:absolute;
+	top: 320px;
+	left: 402px;
+}
+
+#buttonLogStart {
+	width:75px; 
+	height:75px;
+}
+
+#borderLogStart {
+	margin-left:30px;
+	position:absolute;
+	top: 386px;
+	left: 370px;
+}
+
+#buttonLogStop {
+	width:75px; 
+	height:75px;
+}
+
+#borderLogStop {
+	margin-left:30px;
+	position:absolute;
+	top: 386px;
+	left: 480px;
+}
+
+

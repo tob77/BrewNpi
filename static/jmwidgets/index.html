@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>JMWidgets</title>
+
+	<script src="js/jquery-1.8.0.min.js"></script>
+
+	<script>
+	$(function() {
+		var strRel = "development/";
+		$(".jmw-listitem").click(function() { 
+			$("#jmw-label").text($(this).text());
+			
+			var strLink = strRel + $(this).children('a').attr('href');
+			$("#jmw-iframe").attr("src", strLink);
+			return false;
+		});
+
+	});
+	</script>
+	<style type="text/css">
+		body{ font:14pt "Tahoma", sans-serif; margin: 50px;}
+		#jmw-list { margin-top: 40px; }
+		.jmw-listitem { list-style-type:none; padding-bottom:6px;}
+	</style>		
+</head>
+
+<body id="page1" style="width:940px;">
+	<h1>Welcome to JMWidgets</h1>
+	<p style="font-size: 1.3em; line-height: 1.5; margin: 10px 0; ">JMWidgets is an open source HTML5 widget library and HMI framework specifically designed for dashboards and automation applications. JMWidgets is a jQuery plug-in and uses the same interface as jQuery and jQuery UI widgets.  To find out more about JMWidgets, visit us at <a href="http://www.jmwidgets.com">www.jmwidgets.com</a>. </p>
+	<p style="font-weight: bold; margin: 2em 0 1em; font-size: 1.3em;">Examples:</p>
+	<p style="font-size: 1.2em; line-height: 1.5; margin: 10px 0; ">This page shows examples of each widget in the JMWidgets library.  You can interact with the widget and  view the source files in the <i>development/examples</i> directory of the downloaded zip file.</p>	
+	<br >
+	<div id="jmw-content">
+	
+	    <div id="jmw-listarea" style="float:left; width:30%" >
+	        <ul id="jmw-list" >
+	            <li class="jmw-listitem"><a href="examples/hmiThemesDemo1.html">Themes</a></li>
+	            <br >
+	            <li class="jmw-listitem"><a href="examples/hmiButtonDemo1.html">Button Widget</a></li>
+	            <li class="jmw-listitem"><a href="examples/hmiBorderDemo1.html">Border Widget</a></li>
+	            <li class="jmw-listitem"><a href="examples/hmiNumericDemo1.html">Numeric Widget</a></li>
+	            <li class="jmw-listitem"><a href="examples/hmiMsgTextDemo1.html">Message Text Widget</a></li>
+	            <li class="jmw-listitem"><a href="examples/hmiDateTimeDemo1.html">Date Time Widget</a></li>
+	            <li class="jmw-listitem"><a href="examples/hmiIndicatorDemo1.html">Indicator Widget</a></li>
+	            <li class="jmw-listitem"><a href="examples/hmiBarGraphDemo1.html">Bar Graph Widget</a></li>
+	            <li class="jmw-listitem"><a href="examples/hmiSliderDemo1.html">Slider Widget</a></li>
+	            <li class="jmw-listitem"><a href="examples/hmiKnobDemo1.html">Knob Widget</a></li>
+	            <li class="jmw-listitem"><a href="examples/hmiNeedleDemo2.html">Needle Widget</a></li>
+	            <li class="jmw-listitem"><a href="examples/hmiAnalogClockDemo1.html">Analog Clock Widget</a></li>
+	            <li class="jmw-listitem"><a href="examples/hmiPageDemo1.html">Page Widget</a></li>
+	        </ul>
+	    </div>
+	 
+	     <div id="jmw-wgtarea" style="float:left; width:70%">
+	    	<div id="jmw-label" style="font-size: 1.4em; margin-bottom:6px; ">Themes</div>
+	        <iframe id="jmw-iframe" src="development/examples/hmiThemesDemo1.html" style="width:100%; height:820px;" ></iframe>
+	     </div>   
+	</div>
+	<br />
+	<br />
+
+</body>
+</html>

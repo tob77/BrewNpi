@@ -1,0 +1,75 @@
+/*!
+ * JMwidgets 
+ * Copyright (c) 2012, Exor International, Inc. & BitMethods, Inc.
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://www.jmwidgets.com
+ */
+ 
+.hmi-bdr-round-base { position:relative; padding: 21px; background: Lavender url(base/images/bdr_round_color.png) 0 0 no-repeat;  background-size:100% 100%; border-radius:50%; }
+.hmi-bdr-rect-base { position:relative; padding:  20px 20px; background: url(base/images/bdr_rect_color_a.png) left top no-repeat, url(base/images/bdr_rect_color_c.png) right top no-repeat, url(base/images/bdr_rect_color_b.png) 30px top no-repeat;  background-color: Lavender; background-size:30px 100%, 30px 100%, 150px 100%; }
+.hmi-bdr-rrect-base { position:relative; padding: 20px 20px 20px 20px; background: url(base/images/bdr_rrect_color_a.png) left top no-repeat, url(base/images/bdr_rrect_color_c.png) right top no-repeat, url(base/images/bdr_rrect_color_b.png) 40px top no-repeat;  background-color: Lavender; background-size:40px 100%, 40px 100%, 150px 100%; min-width:20px; border-radius:25px; }
+.hmi-bdr-round-gauge1-base { padding: 8px 16px 30px 13px; background: Lavender url(base/images/bdr_round_gaugecolor1.png) 0 0 no-repeat;  background-size:100% 100%; border-radius:50%; }
+.hmi-bdr-rect-gauge1-base { padding: 8px 16px 30px 13px; background: Lavender url(base/images/bdr_rect_gaugecolor1.png) 0 0 no-repeat;  background-size:100% 100%; }
+.hmi-bdr-rrect-gauge1-base { padding: 8px 16px 30px 13px; background: Lavender url(base/images/bdr_rrect_gaugecolor1.png) 0 0 no-repeat;  background-size:100% 100%; border-radius:20px; }
+.hmi-bdr-vert-gauge1-base { padding: 14px 20px 39px 16px; background: Lavender url(base/images/bdr_vert_gaugecolor1.png) 0 0 no-repeat; background-size:90px 175px;  border-radius:15px; }
+.hmi-bdr-horiz-gauge1-base { padding: 16px 18px 44px 12px; background: Lavender url(base/images/bdr_horiz_gaugecolor1.png) 0 0 no-repeat; background-size:175px 100px; border-radius:15px;}
+
+
+.hmi-bdr-round-chrome { position:relative; padding: 21px; background: url(chrome/images/bdr_round_chrome.png) 0 0 no-repeat;  background-size:100% 100%; }
+.hmi-bdr-rect-chrome { position:relative; padding:  20px 20px; background: url(chrome/images/bdr_rect_chrome_a.png) left top no-repeat, url(chrome/images/bdr_rect_chrome_c.png) right top no-repeat, url(chrome/images/bdr_rect_chrome_b.png) 21px top no-repeat;  background-size:21px 100%, 20px 100%, 150px 100%; }
+.hmi-bdr-rrect-chrome { position:relative; padding: 20px 20px; background: url(chrome/images/bdr_rrect_chrome_a.png) left top no-repeat, url(chrome/images/bdr_rrect_chrome_c.png) right top no-repeat, url(chrome/images/bdr_rrect_chrome_b.png) 37px top no-repeat;  background-size:37px 100%, 37px 100%, 150px 100%;  }
+.hmi-bdr-round-gauge1-chrome { padding: 8px 16px 30px 13px; background: url(chrome/images/bdr_round_gaugechrome1.png) 0 0 no-repeat;  background-size:100% 100%; }
+.hmi-bdr-vert-gauge1-chrome { padding: 14px 20px 39px 16px; background: url(chrome/images/bdr_vert_gaugechrome1.png) 0 0 no-repeat; background-size:90px 175px;   }
+.hmi-bdr-horiz-gauge1-chrome { padding: 16px 18px 40px 12px; background: url(chrome/images/bdr_horiz_gaugechrome1.png) 0 0 no-repeat; background-size:175px 100px; }
+
+.hmi-bdr-round-gold { position:relative; padding: 21px; background: url(gold/images/bdr_round_gold.png) 0 0 no-repeat;  background-size:100% 100%; }
+.hmi-bdr-rect-gold { position:relative; padding:  20px 20px; background: url(gold/images/bdr_rect_gold_a.png) left top no-repeat, url(gold/images/bdr_rect_gold_c.png) right top no-repeat, url(gold/images/bdr_rect_gold_b.png) 21px top no-repeat;  background-size:21px 100%, 20px 100%, 150px 100%; }
+.hmi-bdr-rrect-gold { position:relative; padding: 20px 20px; background: url(gold/images/bdr_rrect_gold_a.png) left top no-repeat, url(gold/images/bdr_rrect_gold_c.png) right top no-repeat, url(gold/images/bdr_rrect_gold_b.png) 37px top no-repeat;  background-size:37px 100%, 37px 100%, 150px 100%;  }
+.hmi-bdr-round-gauge1-gold { padding: 8px 16px 30px 13px; background: url(gold/images/bdr_round_gaugegold1.png) 0 0 no-repeat;  background-size:100% 100%; }
+.hmi-bdr-vert-gauge1-gold { padding: 14px 20px 39px 16px; background: url(gold/images/bdr_vert_gaugegold1.png) 0 0 no-repeat; background-size:90px 175px;   }
+.hmi-bdr-horiz-gauge1-gold { padding: 16px 18px 40px 12px; background: url(gold/images/bdr_horiz_gaugegold1.png) 0 0 no-repeat; background-size:175px 100px; }
+
+.hmi-bdr-round-copper { position:relative; padding: 21px; background: url(copper/images/bdr_round_copper.png) 0 0 no-repeat;  background-size:100% 100%; }
+.hmi-bdr-rect-copper { position:relative; padding:  21px 20px; background: url(copper/images/bdr_rect_copper_a.png) left top no-repeat, url(copper/images/bdr_rect_copper_c.png) right top no-repeat, url(copper/images/bdr_rect_copper_b.png) 21px top no-repeat;  background-size:21px 100%, 20px 100%, 150px 100%; }
+.hmi-bdr-rrect-copper { position:relative; padding: 20px 20px; background: url(copper/images/bdr_rrect_copper_a.png) left top no-repeat, url(copper/images/bdr_rrect_copper_c.png) right top no-repeat, url(copper/images/bdr_rrect_copper_b.png) 37px top no-repeat;  background-size:37px 100%, 37px 100%, 150px 100%;  }
+.hmi-bdr-round-gauge1-copper { padding: 8px 16px 30px 13px; background: url(copper/images/bdr_round_gaugecopper1.png) 0 0 no-repeat;  background-size:100% 100%; }
+.hmi-bdr-vert-gauge1-copper { padding: 14px 20px 39px 16px; background: url(copper/images/bdr_vert_gaugecopper1.png) 0 0 no-repeat; background-size:90px 175px;   }
+.hmi-bdr-horiz-gauge1-copper { padding: 16px 18px 40px 12px; background: url(copper/images/bdr_horiz_gaugecopper1.png) 0 0 no-repeat; background-size:175px 100px; }
+
+.hmi-bdr-round-blpl { position:relative; padding: 21px; background: url(blpl/images/bdr_round_blpl.png) 0 0 no-repeat;  background-size:100% 100%; }
+.hmi-bdr-rect-blpl { position:relative; padding:  21px 20px; background: url(blpl/images/bdr_rect_blpl_a.png) left top no-repeat, url(blackplastic/images/bdr_rect_blpl_c.png) right top no-repeat, url(blackplastic/images/bdr_rect_blpl_b.png) 21px top no-repeat;  background-size:21px 100%, 20px 100%, 150px 100%; }
+.hmi-bdr-rrect-blpl { position:relative; padding: 20.01px 20px; background: url(blpl/images/bdr_rrect_blpl_a.png) left top no-repeat, url(blackplastic/images/bdr_rrect_blpl_c.png) right top no-repeat, url(blackplastic/images/bdr_rrect_blpl_b.png) 37px top no-repeat;  background-size:37px 100%, 37px 100%, 150px 100%;  }
+.hmi-bdr-round-gauge1-blpl { padding: 8px 16px 30px 13px; background: url(blpl/images/bdr_round_gaugeblpl1.png) 0 0 no-repeat;  background-size:100% 100%; }
+.hmi-bdr-vert-gauge1-blpl { padding: 14px 20px 39px 18px; background: url(blpl/images/bdr_vert_gaugeblpl1.png) 0 0 no-repeat; background-size:90px 175px;   }
+.hmi-bdr-horiz-gauge10blpl { padding: 16px 18px 40px 12px; background: url(blpl/images/bdr_horiz_gaugeblpl1.png) 0 0 no-repeat; background-size:175px 100px; }
+
+.hmi-bdr-round-whpl { position:relative; padding: 21px; background: url(whpl/images/bdr_round_whpl.png) 0 0 no-repeat;  background-size:100% 100%; }
+.hmi-bdr-rect-whpl { position:relative; padding:  20px 20px; background: url(whpl/images/bdr_rect_whpl_a.png) left top no-repeat, url(whpl/images/bdr_rect_whpl_c.png) right top no-repeat, url(whpl/images/bdr_rect_whpl_b.png) 21px top no-repeat;  background-size:21px 100%, 20px 100%, 150px 100%; }
+.hmi-bdr-rrect-whpl { position:relative; padding: 20px 20px; background: url(whpl/images/bdr_rrect_whpl_a.png) left top no-repeat, url(whpl/images/bdr_rrect_whpl_c.png) right top no-repeat, url(whpl/images/bdr_rrect_whpl_b.png) 37px top no-repeat;  background-size:37px 100%, 37px 100%, 150px 100%;  }
+.hmi-bdr-round-gauge1-whpl { padding: 8px 16px 30px 13px; background: url(whpl/images/bdr_round_gaugewhpl1.png) 0 0 no-repeat;  background-size:100% 100%; }
+.hmi-bdr-vert-gauge1-whpl { padding: 14px 20px 39px 16px; background: url(whpl/images/bdr_vert_gaugewhpl1.png) 0 0 no-repeat; background-size:90px 175px;   }
+.hmi-bdr-horiz-gauge1-whpl { padding: 16px 18px 40px 12px; background: url(whpl/images/bdr_horiz_gaugewhpl1.png) 0 0 no-repeat; background-size:175px 100px; }
+/**
+ * JMwidgets 
+ * Copyright (c) 2012, Exor International, Inc. & BitMethods, Inc.
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://www.jmwidgets.com
+ */
+ 
+.hmi-slider-horiz-base {margin-left:25px; margin-right:25px; padding-left:12px; padding-right:12px; background: url(base/images/sldr_horiz_color_a.png) left top no-repeat, url(base/images/sldr_horiz_color_c.png) right top no-repeat,  url(base/images/sldr_horiz_color_b.png) 30px top no-repeat; background-size:12px 100%, 12px 100%, 145px 100%; background-color:Lavender; border-radius:10px}
+.hmi-slider-vert-base {margin-top:25px; margin-bottom:25px; padding-top:12px; padding-bottom:12px; background: url(base/images/sldr_vert_color_a.png) left top no-repeat, url(base/images/sldr_vert_color_c.png) left bottom no-repeat,  url(base/images/sldr_vert_color_b.png) left 32px no-repeat ; background-size:100% 12px, 100% 12px, 100% 145px; background-color:Lavender; border-radius:10px}
+
+.hmi-slider-horiz-chrome {margin-left:25px; margin-right:25px; padding-left:10px; padding-right:10px; background: url(chrome/images/sldr_horiz_chrome_a.png) left top no-repeat, url(chrome/images/sldr_horiz_chrome_c.png) right top no-repeat,  url(chrome/images/sldr_horiz_chrome_b.png) left top repeat-x content-box; background-size:10px 100%; border-radius:0}
+.hmi-slider-vert-chrome {margin-top:25px; margin-bottom:25px; padding-top:10px; padding-bottom:10px; background: url(chrome/images/sldr_vert_chrome_a.png) left top no-repeat, url(chrome/images/sldr_vert_chrome_c.png) left bottom no-repeat,  url(chrome/images/sldr_vert_chrome_b.png) left top repeat-y content-box; background-size:100% 10px; border-radius:0}
+
+.hmi-slider-horiz-gold {margin-left:25px; margin-right:25px; padding-left:10px; padding-right:10px; background: url(gold/images/sldr_horiz_gold_a.png) left top no-repeat, url(gold/images/sldr_horiz_gold_c.png) right top no-repeat,  url(gold/images/sldr_horiz_gold_b.png) left top repeat-x content-box; background-size:10px 100%; border-radius:0}
+.hmi-slider-vert-gold {margin-top:25px; margin-bottom:25px; padding-top:10px; padding-bottom:10px; background: url(gold/images/sldr_vert_gold_a.png) left top no-repeat, url(gold/images/sldr_vert_gold_c.png) left bottom no-repeat,  url(gold/images/sldr_vert_gold_b.png) left top repeat-y content-box; background-size:100% 10px; border-radius:0}
+
+.hmi-slider-horiz-copper {margin-left:25px; margin-right:25px; padding-left:10px; padding-right:10px; background: url(copper/images/sldr_horiz_copper_a.png) left top no-repeat, url(copper/images/sldr_horiz_copper_c.png) right top no-repeat,  url(copper/images/sldr_horiz_copper_b.png) left top repeat-x content-box; background-size:10px 100%; border-radius:0}
+.hmi-slider-vert-copper {margin-top:25px; margin-bottom:25px; padding-top:10px; padding-bottom:10px; background: url(copper/images/sldr_vert_copper_a.png) left top no-repeat, url(copper/images/sldr_vert_copper_c.png) left bottom no-repeat,  url(copper/images/sldr_vert_copper_b.png) left top repeat-y content-box; background-size:100% 10px; border-radius:0}
+
+.hmi-slider-horiz-blpl {margin-left:25px; margin-right:25px; padding-left:10px; padding-right:10px; background: url(blpl/images/sldr_horiz_blpl_a.png) left top no-repeat, url(blpl/images/sldr_horiz_blpl_c.png) right top no-repeat,  url(blpl/images/sldr_horiz_blpl_b.png) left top repeat-x content-box; background-size:10px 100%; border-radius:0}
+.hmi-slider-vert-blpl {margin-top:25px; margin-bottom:25px; padding-top:10px; padding-bottom:10px; background: url(blpl/images/sldr_vert_blpl_a.png) left top no-repeat, url(blpl/images/sldr_vert_blpl_c.png) left bottom no-repeat,  url(blpl/images/sldr_vert_blpl_b.png) left top repeat-y content-box; background-size:100% 10px; border-radius:0}
+
+.hmi-slider-horiz-whpl {margin-left:25px; margin-right:25px; padding-left:10px; padding-right:10px; background: url(whpl/images/sldr_horiz_whpl_a.png) left top no-repeat, url(whpl/images/sldr_horiz_whpl_c.png) right top no-repeat,  url(whpl/images/sldr_horiz_whpl_b.png) left top repeat-x content-box; background-size:10px 100%; border-radius:0}
+.hmi-slider-vert-whpl {margin-top:25px; margin-bottom:25px; padding-top:10px; padding-bottom:10px; background: url(whpl/images/sldr_vert_whpl_a.png) left top no-repeat, url(whpl/images/sldr_vert_whpl_c.png) left bottom no-repeat,  url(whpl/images/sldr_vert_whpl_b.png) left top repeat-y content-box; background-size:100% 10px; border-radius:0}

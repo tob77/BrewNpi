@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>HMI Needle Demo</title>
+
+		<!-- JMWidget styles -->
+	<link rel="stylesheet" href="../css/base/hmi.base.css">
+	<link rel="stylesheet" href="../css/hmi.base-allstyles.css">	
+		<!-- jQuery classes -->
+	<script src="../external/jquery-1.8.0.min.js"></script>
+	<script src="../external/jquery-ui-1.8.23.custom.min.js"></script>
+		<!-- JMWidget classes -->
+	<script src="../js/hmi.core.js"></script>
+	<script src="../js/hmi.widget.js"></script>
+	<script src="../js/hmi.page.js"></script>
+	<script src="../js/hmi.needle.js"></script>
+	<script src="../js/hmi.border.js"></script>
+	<script src="../js/hmi.slider.js"></script>	
+	<script src="../js/jq.hmi.core.js"></script>
+	<script src="../js/jq.hmi.widget.js"></script>
+	<script src="../js/jq.hmi.page.js"></script>
+	<script src="../js/jq.hmi.border.js"></script>
+	<script src="../js/jq.hmi.needle.js"></script>
+	<script src="../js/jq.hmi.slider.js"></script>
+	
+	<script>
+	$(function() {
+		$("#page1").hmiPage();
+		$("#bdr1").hmiBorder({shape:'round', style:'gauge1'} );	
+		$("#needle1").hmiNeedle( {type:'round', value:0, startAngle:25, stopAngle:155, initAngle:180, min:0, max:100, ctr:{dy:45}, scale:{x:1.1, y:1.5} } );	
+		$("#bdr2").hmiBorder({shape:'vert', style:'gauge1'} );	
+		$("#needle2").hmiNeedle( {type:'vert', value:0, min:0, max:100} );	
+		$("#bdr3").hmiBorder({shape:'horiz', style:'gauge1'} );	
+		$("#needle3").hmiNeedle( {type:'horiz', value:0, min:0, max:100, align:'bottom'} );	
+		$("#slider1").hmiSlider({type:'horiz' });	
+		
+		$("#needle1").hmiAttach("#slider1", { tag:'value', attr:'value' });
+		$("#needle2").hmiAttach("#slider1", { tag:'value', attr:'value' });
+		$("#needle3").hmiAttach("#slider1", { tag:'value', attr:'value' });
+	});
+	</script>
+</head>
+<body id="page1">
+<br />
+<div id="bdr1">
+	<div id="needle1" style="width:150px; height:150px; background-image:url(images/needle_bkgd_round_1.png)"></div>
+</div>
+<div id="bdr2" style="margin-left:40px" >
+	<div id="needle2" style="width:60px; height:230px; background-image:url(images/needle_bkgd_vert_1.png)" ></div>
+</div>
+<div id="bdr3" style="margin-left:40px" >
+	<div id="needle3" style="width:150px; height:50px; background-image:url(images/needle_bkgd_horiz_1.png)" ></div>
+</div>
+<br />
+<br />
+<div id="slider1" style="width:150px; height:30px; margin-left:160px" ></div>
+</body>
+<br />
+<i>Note: labels, tick marks and color bar are a single background image</i>
+</html>

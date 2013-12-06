@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Brew N Pi</title>
+
+    <link rel="stylesheet" type="text/css" href="/static/brewNpi.css" />
+        <!-- JMWidget styles -->
+    <link rel="stylesheet" href="../static/jmwidgets/css/base/jmwidgets-0.8.0.base.min.css">
+    <link rel="stylesheet" href="../static/jmwidgets/css/jmwidgets-0.8.0.allstyles.min.css">
+        <!-- jQuery classes -->
+    <script src="../static/jquery-ui-1.9.0.custom/js/jquery-1.8.2.js"></script>
+    <script src="../static/jquery-ui-1.9.0.custom/js/jquery-ui-1.9.0.custom.js"></script>
+        <!-- JMWidget classes -->
+    <script src="../static/jmwidgets/js/jmwidgets-0.8.0.min.js"></script>
+    <script src="../static/jmwidgets/js/jq.hmi.pythondata.js"></script>
+    <script src="../static/jmwidgets/js/hmi.pythondata.js"></script>
+    <script src="../static/jmwidgets/js/jq.hmi.string.js"></script>
+    <script src="../static/jmwidgets/js/hmi.string.js"></script>
+    <script src="../static/jmwidgets/js/jq.hmi.indicator2.js"></script>
+    <script src="../static/jmwidgets/js/hmi.indicator2.js"></script>
+
+    <script>
+        jQuery(function() {
+       jQuery("#page1").hmiPage();
+       jQuery("#numericPidCv").hmiNumeric({rw:'rw', format:'#.#'});
+       jQuery("#borderNumericPidCv").hmiBorder({shape:'rrect', style:'copper' });
+       jQuery("#sliderPidCv").hmiSlider({type:'vert', style:'copper' });
+        jQuery("#borderSliderPidCv").hmiBorder({shape:'rrect', style:'copper' });
+       jQuery("#numericPidSp").hmiNumeric({rw:'rw', format:'#.#'});
+       jQuery("#borderPidSp").hmiBorder({shape:'rrect', style:'copper' });
+       jQuery("#numericTemperature").hmiNumeric({rw:'rw', format:'#.#'});
+       jQuery("#borderTemperature").hmiBorder({shape:'rrect', style:'copper' });
+       jQuery("#stringBrewMessage").hmiString({rw:'r'});
+       jQuery("#borderBrewMessage").hmiBorder({shape:'rrect', style:'copper' });
+       jQuery("#stringTimer").hmiString({rw:'r'});
+       jQuery("#borderTimer").hmiBorder({shape:'rrect', style:'copper' });
+       jQuery("#stringPidMode").hmiString({rw:'r'});
+       jQuery("#borderPidMode").hmiBorder({shape:'rrect', style:'copper' });  
+       jQuery("#needlePidCv").hmiNeedle( {type:'horiz', value:0, min:0, max:100, align:'bottom'} );
+       jQuery("#borderNeedlePidCv").hmiBorder({shape:'horiz', style:'gauge1-copper'} );  
+       jQuery("#indicatorPump").hmiIndicator2( {colors:['#004C00','lime']} );
+       jQuery("#indicatorBurner").hmiIndicator2( {colors:['#004C00','lime']} );
+       jQuery("#indicatorWaterValve").hmiIndicator2( {colors:['#004C00','lime']} );
+       jQuery("#buttonStart").hmiButton({shape:'round', fill:'green' });
+       jQuery("#borderStart").hmiBorder({shape:'round', style:'copper'} );
+       jQuery("#buttonStepInc").hmiButton({shape:'round', fill:'blue' });
+       jQuery("#borderStepInc").hmiBorder({shape:'round', style:'copper'} );
+       jQuery("#buttonReset").hmiButton({shape:'round', fill:'red' });
+       jQuery("#borderReset").hmiBorder({shape:'round', style:'copper'} );
+       jQuery("#buttonPidAuto").hmiButton({shape:'rrect', fill:'black' });
+       jQuery("#borderPidAuto").hmiBorder({shape:'rrect', style:'copper'} );
+       jQuery("#buttonPidManual").hmiButton({shape:'rrect', fill:'black' });
+       jQuery("#borderPidManual").hmiBorder({shape:'rrect', style:'copper'} );
+       jQuery("#borderPump").hmiBorder({shape:'round', style:'copper'} );
+       jQuery("#borderBurner").hmiBorder({shape:'round', style:'copper'} );
+       jQuery("#borderWaterValve").hmiBorder({shape:'round', style:'copper'} );
+       
+       jQuery("#server1").hmiPythonData( {groupName:'poo', projectName:'fuck', deviceID:'shit'} );          
+       // attach numeric and slider to the variables data source to show changing values
+        jQuery("#numericPidCv").hmiAttach("#server1", {tag:'pidCv', rw:'rw', attr:'value'});
+       jQuery("#sliderPidCv").hmiAttach("#server1", {tag:'pidCv', rw:'rw', attr:'value'});
+       jQuery("#numericPidSp").hmiAttach("#server1", {tag:'pidSp', rw:'rw', attr:'value'});
+       jQuery("#numericTemperature").hmiAttach("#server1", {tag:'temperature', rw:'rw', attr:'value'});
+        jQuery("#stringBrewMessage").hmiAttach("#server1", {tag:'brewMessage', rw:'r', attr:'value'});
+       jQuery("#stringTimer").hmiAttach("#server1", {tag:'timerString', rw:'r', attr:'value'});
+       jQuery("#stringPidMode").hmiAttach("#server1", {tag:'pidMode', rw:'r', attr:'value'});
+       jQuery("#buttonStart").hmiAttach("#server1", {tag:'cmdStart', rw:'rw', attr:'value'});
+       jQuery("#buttonStepInc").hmiAttach("#server1", {tag:'cmdStepIncrement', rw:'rw', attr:'value'});
+       jQuery("#buttonReset").hmiAttach("#server1", {tag:'cmdReset', rw:'rw', attr:'value'});
+       jQuery("#buttonPidAuto").hmiAttach("#server1", {tag:'cmdPidAuto', rw:'rw', attr:'value'});
+       jQuery("#buttonPidManual").hmiAttach("#server1", {tag:'cmdPidManual', rw:'rw', attr:'value'});
+       jQuery("#needlePidCv").hmiAttach("#server1", {tag:'pidCv', rw:'rw', attr:'value'});     
+       jQuery("#indicatorPump").hmiAttach("#server1", {tag:'pumpStatus', rw:'r', attr:'value'});   
+       jQuery("#indicatorBurner").hmiAttach("#server1", {tag:'burnerStatus', rw:'r', attr:'value'}); 
+       jQuery("#indicatorWaterValve").hmiAttach("#server1", {tag:'waterValveStatus', rw:'r', attr:'value'});
+        // start page operations
+        jQuery('#page1').trigger('pagestart');  
+    });
+    </script>
+
+</head>
+<body id="page1">
+    <header> 
+        <h1> </h1>    
+    </header>
+    <nav>
+    <ul>
+    <li><a href="/">Status</a></li>
+    <li><a href="brewControl">Control</a></li>
+    <li><a href="brewTrend">Trend</a></li>
+    <li><a href="brewSetup">Setup</a></li>
+    </ul>
+    </nav>
+    <div id="headerTitle">Brew N Pi Automated Brewing Controller</div>
+    <br >
+    <div id="server1"></div>
+    <br >
+    <div id="pidCvLabel">PID CV(%)</div>
+    <div id="borderNumericPidCv" >
+        <div id="numericPidCv"  >000</div>
+    </div>
+    <br >
+    <div id="borderNeedlePidCv" >
+        <div id="needlePidCv" ></div>
+    </div>
+    <br >
+    <div id="borderSliderPidCv" >
+        <div id="sliderPidCv" ></div>
+    </div>
+    <br >
+    <div id="temperatureLabel">Temperature(&deg; F)</div>
+    <div id="borderTemperature" >
+        <div id="numericTemperature" >000</div>
+    </div>
+    <br >
+    <div id="pidSpLabel">Setpoint(%)</div>
+    <div id="borderPidSp" >
+        <div id="numericPidSp" >000</div>
+    </div>
+    <br >
+    <div id="borderBrewMessage" >
+
+        <div id="stringBrewMessage" >000</div>
+
+    </div>
+    <br >
+    <div id="timerLabel">Brew Timer</div>
+    <div id="borderTimer" >
+        <div id="stringTimer" >000</div>
+    </div>
+    <br >
+    <div id="borderStart" >
+        <button id="buttonStart" >Start</button>
+    </div>
+    <div id="borderStepInc" >
+        <button id="buttonStepInc" >Next Step</button>
+    </div>   
+    <div id="borderReset" >
+        <button id="buttonReset" >Reset</button>
+    </div>
+    <br >
+    <div id="borderPidAuto" >
+        <button id="buttonPidAuto" >Pid Auto</button>
+    </div>   
+    <div id="borderPidManual" >    
+        <button id="buttonPidManual" >Pid Manual</button>
+    </div>
+    <div id="pidModeLabel">PID Mode</div>
+    <div id="borderPidMode" >
+        <div id="stringPidMode" >000</div>
+    </div>
+    <div id="pumpLabel">Pump</div>
+    <div id="borderPump" >
+        <div id="indicatorPump" ></div>
+    </div>
+    <div id="burnerLabel">Burner</div>
+    <div id="borderBurner" >
+        <div id="indicatorBurner" ></div>
+    </div>
+    <div id="waterValveLabel">Water Valve</div>
+    <div id="borderWaterValve" >
+        <div id="indicatorWaterValve" ></div>
+    </div>
+</body>
+</html>

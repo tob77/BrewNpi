@@ -1,0 +1,12 @@
+/**
+ * JMwidgets 
+ * Copyright (c) 2012, Exor International, Inc. & BitMethods, Inc.
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://www.jmwidgets.com
+ */
+ 
+.hmi-btn {  font-family: Tahoma, Arial, sans-serif; font-size: 1em; color: #fff; position:relative;  } 
+.hmi-btn-round {padding: 10px 10px;  background: red url(images/btn_round_shiney.png) 0 0 no-repeat;  background-size:200% 100%; border-radius: 50%; -webkit-border-radius: 50%; border-width:0;}
+.hmi-btn-rect {padding: 10px 10px;  background: red url(images/btn_rect_shiney.png) 0 0 no-repeat;  background-size:200% 100%; background-color:red; border-width:0;}
+.hmi-btn-rrect { padding: 10px 10px; background: url(images/btn_rrect_shiney_a1.png) left top no-repeat, url(images/btn_rrect_shiney_c1.png) right top no-repeat, url(images/btn_rrect_shiney_b1.png) 20px top no-repeat;  background-size:20px 100%, 20px 100%, 150px 100%; background-color:red; display:inline-block; border-radius:15px; border-width:0; }
+.hmi-btn-rrect-down { background-image: url(images/btn_rrect_shiney_a2.png), url(images/btn_rrect_shiney_c2.png), url(images/btn_rrect_shiney_b2.png); background-color:red; border-radius:15px; border-width:0;}

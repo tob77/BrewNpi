@@ -1,0 +1,4 @@
+
+.hmi-ind {   } 
+.hmi-ind-round {background: red url(images/ind_blocky_round.png) 0 0 no-repeat;  background-size:100% 100%; -moz-background-size:100% 100%; border: 0; border-radius: 50%; -moz-border-radius: 50%; min-width:25px; }
+.hmi-ind-roundbar {background: red url(images/ind_blocky_roundbar.png) 0 0 no-repeat;  background-size:100% 100%; -moz-background-size: 100% 100%; border: 0; border-radius: 25%; -moz-border-radius: 25%; min-width:50px;}

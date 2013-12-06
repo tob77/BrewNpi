@@ -1,0 +1,10 @@
+/**
+ * JMwidgets 
+ * Copyright (c) 2012, Exor International, Inc. & BitMethods, Inc.
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://www.jmwidgets.com
+ */
+ 
+.hmi-analogclock { position:relative  } 
+.hmi-analogclock-round {background: url(images/clock_round_simple.png) 0 0 no-repeat;  background-size:232px 232px;   }
+.hmi-analogclock canvas {display:block; background-image:url(images/needle_hours_1.png),url(images/needle_mins_1.png),url(images/needle_secs_1.png);  background-position:33px 6.6px,26px 4.4px,13px 4.4px; background-repeat:no-repeat,no-repeat,no-repeat; }

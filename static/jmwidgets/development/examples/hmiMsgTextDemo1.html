@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>HMI Message Text Demo 1</title>
+
+		<!-- JMWidget styles -->
+	<link rel="stylesheet" href="../css/base/hmi.base.css">
+	<link rel="stylesheet" href="../css/hmi.base-allstyles.css">	
+		<!-- jQuery classes -->
+	<script src="../external/jquery-1.8.0.min.js"></script>
+	<script src="../external/jquery-ui-1.8.23.custom.min.js"></script>
+		<!-- JMWidget classes -->
+	<script src="../js/hmi.core.js"></script>
+	<script src="../js/hmi.widget.js"></script>
+	<script src="../js/hmi.msgtext.js"></script>
+	<script src="../js/jq.hmi.core.js"></script>
+	<script src="../js/jq.hmi.widget.js"></script>
+	<script src="../js/jq.hmi.msgtext.js"></script>
+
+
+	<script>
+	$(function() {
+		$("#msgtext1").hmiMsgText( );	
+		$("#msgtext1").hmiAttach("#combo1", {tag:'value', attr:'value'});	
+	});
+	</script>
+</head>
+<body id="page1">
+
+<div id="msgtext1" style="width:100px; text-align:center; font-size:32pt">
+	<span>HTML5</span>
+	<span>is</span>
+	<span>awesome!</span>
+</div>
+<br />
+<br />
+<div style="width:150px;" align="middle">
+	<select id="combo1" style="width:100px" >
+		<option value="0">Message 1</option>
+		<option value="1">Message 2</option>
+		<option value="2">Message 3</option>
+	</select>
+</div>
+
+</body>
+</html>

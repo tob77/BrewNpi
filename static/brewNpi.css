@@ -1,0 +1,312 @@
+#page1 {
+    background: url(/static/images/beer-closeup.jpg) #A98436 no-repeat left top;
+    background-size: 100%;
+}
+
+header {
+    padding: 1px 0;            
+    background-color: rgba(0,0,0,.3);
+    background-image: linear-gradient(top, #6f3736, #4c2626);
+    position:absolute;
+    top: 0%;
+    left: 0%;
+    width:100%;
+    height:75px;
+}
+
+nav {
+    position:relative;
+    top: 35px;
+}
+
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	padding-top:6px;
+	padding-bottom:6px;
+}
+
+li {
+	display:inline;
+}
+
+a:link,a:visited {
+	color:black;
+	background-color:rgba(0,0,0,.2);
+	text-align:center;
+	padding:6px;
+	text-decoration:none;
+}
+
+a:hover,a:active {
+	background-color:rgba(0,0,0,.3);
+}
+
+#headerTitle {
+    position:absolute;
+    top: 5px;
+    left: 20%;
+    font-size:20pt; 
+	color:black;
+}
+
+#stringBrewMessage {
+	font-size:18pt; 
+	color:saddlebrown; 
+	text-align:center; 
+	height:68px;
+	width:320px;
+}
+   
+#borderBrewMessage {
+	position:absolute;
+	top: 90px;
+	left: 399px;
+}
+
+#pidCvLabel {
+	position:absolute;
+	font-size:14pt; 
+	color:#67401D;
+	top: 320px;
+	left: 765px;
+}
+
+#numericPidCv {
+	font-size:24pt; 
+	color:saddlebrown; 
+	text-align:center; 
+	width:100px;
+}
+
+#borderNumericPidCv {
+	position:absolute;
+	top: 425px;
+	left: 750px;
+}
+
+#sliderPidCv {
+	width:22px; 
+	height:100px; 
+	float:left;
+}
+
+#borderSliderPidCv {
+	position:absolute;
+	top: 250px;
+	left: 900px;
+}
+#needlePidCv {
+	width:112px; 
+	height:37px; 
+	background-image:url(/static/jmwidgets/development/examples/images/needle_bkgd_horiz_1.png);
+}
+
+#borderNeedlePidCv {
+	position:absolute;
+	top: 340px;
+	left: 713px;
+	margin-left:30px;
+}
+
+#pidSpLabel {
+	position:absolute;
+	font-size:14pt; 
+	color:#67401D;
+	top: 85px;
+	left: 185px;
+}
+
+#numericPidSp {
+	font-size:24pt;
+	color:saddlebrown; 
+	text-align:center;  
+	width:100px;
+}
+
+#borderPidSp {
+	position:absolute;
+	top: 107px;
+	left: 175px;
+}
+
+#temperatureLabel {
+	position:absolute;
+	font-size:14pt; 
+	color:#67401D;
+	top: 85px;
+	left: 5px;
+}
+
+#numericTemperature {
+	font-size:24pt; 
+	color:saddlebrown; 
+	text-align:center; 
+	width:100px;
+}
+
+#borderTemperature {
+	position:absolute;
+	top: 107px;
+	left: 20px;
+}
+
+#buttonStart {
+	width:75px; 
+	height:75px;
+}
+
+#borderStart {
+	margin-left:30px;
+	position:absolute;
+	top: 190px;
+	left: 371px;
+}
+
+#buttonStepInc {
+	width:75px; 
+	height:75px;
+}
+
+#borderStepInc {
+	margin-left:30px;
+	position:absolute;
+	top: 190px;
+	left: 488px;
+}
+
+#buttonReset {
+	width:75px; 
+	height:75px;
+}
+
+#borderReset {
+	margin-left:30px;
+	position:absolute;
+	top: 190px;
+	left: 605px;
+}
+
+#timerLabel {
+	position:absolute;
+	font-size:14pt; 
+	color:#67401D;
+	top: 85px;
+	left: 825px;
+}
+
+#stringTimer {
+	margin-top:3px;
+	font-size:26pt; 
+	color:saddlebrown; 
+	text-align:center; 
+	width:145px;
+	height:42px;
+}
+
+#borderTimer {
+	position:absolute;
+	top: 107px;
+	left: 800px;
+}
+
+#pidModeLabel {
+	position:absolute;
+	font-size:14pt; 
+	color:#67401D;
+	top: 335px;
+	left: 580px;
+}
+
+#stringPidMode {
+	font-size:20pt; 
+	color:saddlebrown; 
+	text-align:center; 
+	width:140px;
+}
+
+#borderPidMode {
+	position:absolute;
+	top: 355px;
+	left: 550px;
+}
+
+#buttonPidAuto {
+	width:70px; 
+	height:60px;
+}
+
+#borderPidAuto {
+	position:absolute;
+	top: 404px;
+	left: 530px;
+}
+
+#buttonPidManual {
+	width:70px; 
+	height:60px;
+}
+
+#borderPidManual {
+	position:absolute;
+	top: 404px;
+	left: 630px;
+}
+
+#pumpLabel {
+	position:absolute;
+	font-size:14pt; 
+	color:#B87333;
+	top: 330px;
+	left: 35px;
+}
+
+#indicatorPump {
+	width:80px; 
+	height:80px;
+}
+
+#borderPump {
+	position:absolute;
+	top: 350px;
+	left: 5px;
+}
+
+#burnerLabel {
+	position:absolute;
+	font-size:14pt; 
+	color:#B87333;
+	top: 330px;
+	left: 170px;
+}
+
+#indicatorBurner {
+	width:80px; 
+	height:80px;
+}
+
+#borderBurner {
+	position:absolute;
+	top: 350px;
+	left: 145px;
+}
+
+#waterValveLabel {
+	position:absolute;
+	font-size:14pt; 
+	color:#67401D;
+	top: 330px;
+	left: 290px;
+}
+
+#indicatorWaterValve {
+	width:80px; 
+	height:80px;
+}
+
+#borderWaterValve {
+	position:absolute;
+	top: 350px;
+	left: 285px;
+}

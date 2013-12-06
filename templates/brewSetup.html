@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Brew N Pi</title>
+
+    <link rel="stylesheet" type="text/css" href="/static/brewSetup.css" />
+        <!-- JMWidget styles -->
+    <link rel="stylesheet" href="../static/jmwidgets/css/base/jmwidgets-0.8.0.base.min.css">
+    <link rel="stylesheet" href="../static/jmwidgets/css/jmwidgets-0.8.0.allstyles.min.css">
+        <!-- jQuery classes -->
+    <script src="../static/jquery-ui-1.9.0.custom/js/jquery-1.8.2.js"></script>
+    <script src="../static/jquery-ui-1.9.0.custom/js/jquery-ui-1.9.0.custom.js"></script>
+        <!-- JMWidget classes -->
+    <script src="../static/jmwidgets/js/jmwidgets-0.8.0.min.js"></script>
+    <script src="../static/jmwidgets/js/jq.hmi.pythondata.js"></script>
+    <script src="../static/jmwidgets/js/hmi.pythondata.js"></script>
+    <script src="../static/jmwidgets/js/jq.hmi.string.js"></script>
+    <script src="../static/jmwidgets/js/hmi.string.js"></script>
+
+    <script>
+        jQuery(function() {
+       jQuery("#page1").hmiPage();
+       jQuery("#numericPidKpSp").hmiNumeric({rw:'rw', format:'#.#'});
+       jQuery("#borderPidKpSp").hmiBorder({shape:'rrect', style:'copper' });
+       jQuery("#numericPidKiSp").hmiNumeric({rw:'rw', format:'#.#'});
+       jQuery("#borderPidKiSp").hmiBorder({shape:'rrect', style:'copper' });
+       jQuery("#numericPidKdSp").hmiNumeric({rw:'rw', format:'#.#'});
+       jQuery("#borderPidKdSp").hmiBorder({shape:'rrect', style:'copper' });
+       jQuery("#numericCvMinSp").hmiNumeric({rw:'rw', format:'#.#'});
+       jQuery("#borderCvMinSp").hmiBorder({shape:'rrect', style:'copper' });
+       jQuery("#numericCvMaxSp").hmiNumeric({rw:'rw', format:'#.#'});
+       jQuery("#borderCvMaxSp").hmiBorder({shape:'rrect', style:'copper' });
+       jQuery("#numericPidDbSp").hmiNumeric({rw:'rw', format:'#.#'});
+       jQuery("#borderPidDbSp").hmiBorder({shape:'rrect', style:'copper' });
+        jQuery("#numericShutOffTempSp").hmiNumeric({rw:'rw', format:'#.#'});
+       jQuery("#borderShutOffTempSp").hmiBorder({shape:'rrect', style:'copper' });
+       
+        jQuery("#numericStrikeTempSp").hmiNumeric({rw:'rw', format:'#.#'});
+       jQuery("#borderStrikeTempSp").hmiBorder({shape:'rrect', style:'copper' });
+       jQuery("#numericAcidMashTempSp").hmiNumeric({rw:'rw', format:'#.#'});
+       jQuery("#borderAcidMashTempSp").hmiBorder({shape:'rrect', style:'copper' });
+       jQuery("#numericAcidMashTimeSp").hmiNumeric({rw:'rw', format:'#.#'});
+       jQuery("#borderAcidMashTimeSp").hmiBorder({shape:'rrect', style:'copper' });
+       jQuery("#numericProteinMashTempSp").hmiNumeric({rw:'rw', format:'#.#'});
+       jQuery("#borderProteinMashTempSp").hmiBorder({shape:'rrect', style:'copper' });
+       jQuery("#numericProteinMashTimeSp").hmiNumeric({rw:'rw', format:'#.#'});
+       jQuery("#borderProteinMashTimeSp").hmiBorder({shape:'rrect', style:'copper' });
+       jQuery("#numericSacchMashTempSp").hmiNumeric({rw:'rw', format:'#.#'});
+       jQuery("#borderSacchMashTempSp").hmiBorder({shape:'rrect', style:'copper' });
+       jQuery("#numericSacchMashTimeSp").hmiNumeric({rw:'rw', format:'#.#'});
+       jQuery("#borderSacchMashTimeSp").hmiBorder({shape:'rrect', style:'copper' });
+       jQuery("#numericSacch2MashTempSp").hmiNumeric({rw:'rw', format:'#.#'});
+       jQuery("#borderSacch2MashTempSp").hmiBorder({shape:'rrect', style:'copper' });
+       jQuery("#numericSacch2MashTimeSp").hmiNumeric({rw:'rw', format:'#.#'});
+       jQuery("#borderSacch2MashTimeSp").hmiBorder({shape:'rrect', style:'copper' });
+       jQuery("#numericMashOutTempSp").hmiNumeric({rw:'rw', format:'#.#'});
+       jQuery("#borderMashOutTempSp").hmiBorder({shape:'rrect', style:'copper' });
+       jQuery("#numericMashOutTimeSp").hmiNumeric({rw:'rw', format:'#.#'});
+       jQuery("#borderMashOutTimeSp").hmiBorder({shape:'rrect', style:'copper' });
+       jQuery("#numericHotBreakTempSp").hmiNumeric({rw:'rw', format:'#.#'});
+       jQuery("#borderHotBreakTempSp").hmiBorder({shape:'rrect', style:'copper' });
+       jQuery("#numericHotBreakTimeSp").hmiNumeric({rw:'rw', format:'#.#'});
+       jQuery("#borderHotBreakTimeSp").hmiBorder({shape:'rrect', style:'copper' });
+       jQuery("#numericHotBreakCvSp").hmiNumeric({rw:'rw', format:'#.#'});
+       jQuery("#borderHotBreakCvSp").hmiBorder({shape:'rrect', style:'copper' });
+       jQuery("#numericBoilTimeSp").hmiNumeric({rw:'rw', format:'#.#'});
+       jQuery("#borderBoilTimeSp").hmiBorder({shape:'rrect', style:'copper' });
+       jQuery("#numericBoilCvSp").hmiNumeric({rw:'rw', format:'#.#'});
+       jQuery("#borderBoilCvSp").hmiBorder({shape:'rrect', style:'copper' });
+       jQuery("#numericHopStandTempSp").hmiNumeric({rw:'rw', format:'#.#'});
+       jQuery("#borderHopStandTempSp").hmiBorder({shape:'rrect', style:'copper' });
+       jQuery("#numericHopStandTimeSp").hmiNumeric({rw:'rw', format:'#.#'});
+       jQuery("#borderHopStandTimeSp").hmiBorder({shape:'rrect', style:'copper' });
+       jQuery("#numericCounterFlowTempSp").hmiNumeric({rw:'rw', format:'#.#'});
+       jQuery("#borderCounterFlowTempSp").hmiBorder({shape:'rrect', style:'copper' });
+       
+       jQuery("#server1").hmiPythonData( {groupName:'poo', projectName:'fuck', deviceID:'shit'} );          
+       // attach numeric and slider to the variables data source to show changing values
+        jQuery("#numericPidKpSp").hmiAttach("#server1", {tag:'pidKpSp', rw:'rw', attr:'value'});
+       jQuery("#numericPidKiSp").hmiAttach("#server1", {tag:'pidKiSp', rw:'rw', attr:'value'});
+       jQuery("#numericPidKdSp").hmiAttach("#server1", {tag:'pidKdSp', rw:'rw', attr:'value'});
+        jQuery("#numericCvMinSp").hmiAttach("#server1", {tag:'cvMinSp', rw:'rw', attr:'value'});
+       jQuery("#numericCvMaxSp").hmiAttach("#server1", {tag:'cvMaxSp', rw:'rw', attr:'value'});
+       jQuery("#numericPidDbSp").hmiAttach("#server1", {tag:'pidDbSp', rw:'rw', attr:'value'});
+        jQuery("#numericShutOffTempSp").hmiAttach("#server1", {tag:'shutOffTempSp', rw:'rw', attr:'value'});
+       jQuery("#numericStrikeTempSp").hmiAttach("#server1", {tag:'strikeTempSp', rw:'rw', attr:'value'});
+       jQuery("#numericAcidMashTempSp").hmiAttach("#server1", {tag:'acidMashTempSp', rw:'rw', attr:'value'});
+       jQuery("#numericAcidMashTimeSp").hmiAttach("#server1", {tag:'acidMashTimeSp', rw:'rw', attr:'value'});
+       jQuery("#numericProteinMashTempSp").hmiAttach("#server1", {tag:'proteinMashTempSp', rw:'rw', attr:'value'});
+       jQuery("#numericProteinMashTimeSp").hmiAttach("#server1", {tag:'proteinMashTimeSp', rw:'rw', attr:'value'});
+       jQuery("#numericSacchMashTempSp").hmiAttach("#server1", {tag:'sacchMashTempSp', rw:'rw', attr:'value'});
+       jQuery("#numericSacchMashTimeSp").hmiAttach("#server1", {tag:'sacchMashTimeSp', rw:'rw', attr:'value'});
+       jQuery("#numericSacch2MashTempSp").hmiAttach("#server1", {tag:'sacch2MashTempSp', rw:'rw', attr:'value'});
+       jQuery("#numericSacch2MashTimeSp").hmiAttach("#server1", {tag:'sacch2MashTimeSp', rw:'rw', attr:'value'});
+       jQuery("#numericMashOutTempSp").hmiAttach("#server1", {tag:'mashOutTempSp', rw:'rw', attr:'value'});
+       jQuery("#numericMashOutTimeSp").hmiAttach("#server1", {tag:'mashOutTimeSp', rw:'rw', attr:'value'});
+       jQuery("#numericHotBreakTempSp").hmiAttach("#server1", {tag:'hotBreakTempSp', rw:'rw', attr:'value'});
+       jQuery("#numericHotBreakTimeSp").hmiAttach("#server1", {tag:'hotBreakTimeSp', rw:'rw', attr:'value'});
+       jQuery("#numericHotBreakCvSp").hmiAttach("#server1", {tag:'hotBreakCvSp', rw:'rw', attr:'value'});
+       jQuery("#numericBoilTimeSp").hmiAttach("#server1", {tag:'boilTimeSp', rw:'rw', attr:'value'});
+       jQuery("#numericBoilCvSp").hmiAttach("#server1", {tag:'boilCvSp', rw:'rw', attr:'value'});
+       jQuery("#numericHopStandTempSp").hmiAttach("#server1", {tag:'hopStandTempSp', rw:'rw', attr:'value'});
+       jQuery("#numericHopStandTimeSp").hmiAttach("#server1", {tag:'hopStandTimeSp', rw:'rw', attr:'value'});
+       jQuery("#numericCounterFlowTempSp").hmiAttach("#server1", {tag:'counterFlowTempSp', rw:'rw', attr:'value'});
+       
+        // start page operations
+        jQuery('#page1').trigger('pagestart');  
+    });
+    </script>
+
+</head>
+<body id="page1">
+    <header>
+        <h1> </h1>    
+    </header>
+    <nav>
+    <ul>
+    <li><a href="/">Status</a></li>
+    <li><a href="brewControl">Control</a></li>
+    <li><a href="brewTrend">Trend</a></li>
+    <li><a href="brewSetup">Setup</a></li>
+    </ul>
+    </nav>
+    <div id="headerTitle">Brew N Pi Automated Brewing Controller</div>
+    <br >
+    <div id="server1"></div>
+    <br >
+    <div id="tempSpLabel">Temp(&deg; F)</div>
+    <div id="timeSpLabel">Timer(Min)</div>
+    <div id="cvSpLabel">CV(%)</div>
+    <div id="strikeLabel">Strike</div>
+    <div id="borderStrikeTempSp" >
+        <div id="numericStrikeTempSp" >000</div>
+    </div>
+    <br >
+    <div id="acidMashLabel">Acid Mash</div>
+    <div id="borderAcidMashTempSp" >
+        <div id="numericAcidMashTempSp" >000</div>
+    </div>
+    <br >
+    <div id="borderAcidMashTimeSp" >
+        <div id="numericAcidMashTimeSp" >000</div>
+    </div>
+    <br >
+    <div id="proteinMashLabel">Protein Mash</div>
+    <div id="borderProteinMashTempSp" >
+        <div id="numericProteinMashTempSp" >000</div>
+    </div>
+    <br >
+    <div id="borderProteinMashTimeSp" >
+        <div id="numericProteinMashTimeSp" >000</div>
+    </div>
+    <br >
+    <div id="sacchMashLabel">Sacch Mash</div>
+    <div id="borderSacchMashTempSp" >
+        <div id="numericSacchMashTempSp" >000</div>
+    </div>
+    <br >
+    <div id="borderSacchMashTimeSp" >
+        <div id="numericSacchMashTimeSp" >000</div>
+    </div>
+    <br >
+    <div id="sacch2MashLabel">Sacch Mash #2</div>
+    <div id="borderSacch2MashTempSp" >
+        <div id="numericSacch2MashTempSp" >000</div>
+    </div>
+    <br >
+    <div id="borderSacch2MashTimeSp" >
+        <div id="numericSacch2MashTimeSp" >000</div>
+    </div>
+    <br >
+    <div id="mashOutLabel">Mash Out</div>
+    <div id="borderMashOutTempSp" >
+        <div id="numericMashOutTempSp" >000</div>
+    </div>
+    <br >
+    <div id="borderMashOutTimeSp" >
+        <div id="numericMashOutTimeSp" >000</div>
+    </div>
+    <br >
+    <div id="hotBreakLabel">Hot Break</div>
+    <div id="borderHotBreakTempSp" >
+        <div id="numericHotBreakTempSp" >000</div>
+    </div>
+    <br >
+    <div id="borderHotBreakTimeSp" >
+        <div id="numericHotBreakTimeSp" >000</div>
+    </div>
+    <br >
+    <div id="borderHotBreakCvSp" >
+        <div id="numericHotBreakCvSp" >000</div>
+    </div>
+    <br >
+    <div id="boilLabel">Boil</div>
+    <div id="borderBoilTimeSp" >
+        <div id="numericBoilTimeSp" >000</div>
+    </div>
+    <br >
+    <div id="borderBoilCvSp" >
+        <div id="numericBoilCvSp" >000</div>
+    </div>
+    <br >
+    <div id="hopStandLabel">Hop Stand</div>
+    <div id="borderHopStandTempSp" >
+        <div id="numericHopStandTempSp" >000</div>
+    </div>
+    <br >
+    <div id="borderHopStandTimeSp" >
+        <div id="numericHopStandTimeSp" >000</div>
+    </div>
+    <br >
+    <div id="counterFlowLabel">CF Heat Exchanger</div>
+    <div id="borderCounterFlowTempSp" >
+        <div id="numericCounterFlowTempSp" >000</div>
+    </div>
+    <br >
+    <div id="pidKpSpLabel">PID Kp</div>
+    <div id="borderPidKpSp" >
+        <div id="numericPidKpSp" >000</div>
+    </div>
+    <br >
+    <div id="pidKiSpLabel">PID Ki</div>
+    <div id="borderPidKiSp" >
+        <div id="numericPidKiSp" >000</div>
+    </div>
+    <br >
+    <div id="pidKdSpLabel">PID Kd</div>
+    <div id="borderPidKdSp" >
+        <div id="numericPidKdSp" >000</div>
+    </div>
+    <br >
+    <div id="cvMinSpLabel">Min CV(%)</div>
+    <div id="borderCvMinSp" >
+        <div id="numericCvMinSp" >000</div>
+    </div>
+    <br >
+    <div id="cvMaxSpLabel">Max CV(%)</div>
+    <div id="borderCvMaxSp" >
+        <div id="numericCvMaxSp" >000</div>
+    </div>
+    <br >
+    <div id="pidDbSpLabel">PID DB(&deg; F)</div>
+    <div id="borderPidDbSp" >
+        <div id="numericPidDbSp" >000</div>
+    </div>
+    <br >
+    <div id="shutOffTempSpLabel">Shut off Deviation Temp(&deg; F)</div>
+    <div id="borderShutOffTempSp" >
+        <div id="numericShutOffTempSp" >000</div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,19 @@
+/**
+ * JMwidgets 
+ * Copyright (c) 2012, Exor International, Inc. & BitMethods, Inc.
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://www.jmwidgets.com
+ */
+ 
+ 
+.hmi-fx-shadow { box-shadow: 10px 15px 20px #aaa; -webkit-box-shadow: 10px 15px 20px #aaa; } 
+.hmi-fx-shadow-round { box-shadow: 10px 15px 20px #aaa; -webkit-box-shadow: 10px 15px 20px #888; border-radius:50%;} 
+
+/* use image instead of box-shadow until IE 10 catches up
+.hmi-fx-float:after { display:block; content:""; clear:both; margin-left:30%; width:40%; height: 2px; box-shadow: 0 40px 30px 15px #ccc; -webkit-box-shadow: 0 50px 30px 20px #aaa;   } 
+*/
+.hmi-fx-float{ display:inline-block;   } 
+.hmi-fx-float:after { display:block; content:""; clear:both; margin-left:0%; width:90%; height: 50px; background:url(images/fx_float_shadow1.png) 0 0 no-repeat; background-size:100% 100%   } 
+
+.hmi-fx-card { background-color: white; border: 4px solid #aaa;  } 
+.hmi-fx-card:after {  position:absolute; z-index:-1; content:""; width:100%; height: 12%;  background:url(images/fx_card_shadow1.png) 0 0 no-repeat; background-size:100% 100%; }

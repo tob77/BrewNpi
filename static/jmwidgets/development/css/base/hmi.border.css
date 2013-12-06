@@ -1,0 +1,19 @@
+/**
+ * JMwidgets 
+ * Copyright (c) 2012, Exor International, Inc. & BitMethods, Inc.
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://www.jmwidgets.com
+ */
+ 
+.hmi-bdr { position:relative; display:inline-block;  } 
+.hmi-bdr-round { position:relative; padding: 21px; background: Lavender url(images/bdr_round_color.png) 0 0 no-repeat;  background-size:100% 100%; border-radius:50%; -webkit-border-radius:50% }
+.hmi-bdr-rect { position:relative; padding:  20px 20px; background: url(images/bdr_rect_color_a.png) left top no-repeat, url(images/bdr_rect_color_c.png) right top no-repeat, url(images/bdr_rect_color_b.png) 30px top no-repeat;  background-color: Lavender; background-size:30px 100%, 30px 100%, 150px 100%; }
+.hmi-bdr-rrect { position:relative; padding: 20px 20px 20px 20px; background: url(images/bdr_rrect_color_a.png) left top no-repeat, url(images/bdr_rrect_color_c.png) right top no-repeat, url(images/bdr_rrect_color_b.png) 40px top no-repeat;  background-color: Lavender; background-size:40px 100%, 40px 100%, 150px 100%; min-width:20px; border-radius:25px; }
+
+.hmi-glass-round-clock1 { display:block; background: url(images/glass_round_clock1.png) 0 0 no-repeat;  background-size:100% 100%; }
+
+.hmi-bdr-round-gauge1 { padding: 8px 16px 30px 13px; background: Lavender url(images/bdr_round_gaugecolor1.png) 0 0 no-repeat;  background-size:100% 100%; border-radius:50%; }
+.hmi-bdr-rect-gauge1 { padding: 8px 16px 30px 13px; background: Lavender url(images/bdr_rect_gaugecolor1.png) 0 0 no-repeat;  background-size:100% 100%; }
+.hmi-bdr-rrect-gauge1 { padding: 8px 16px 30px 13px; background: Lavender url(images/bdr_rrect_gaugecolor1.png) 0 0 no-repeat;  background-size:100% 100%; border-radius:20px; }
+.hmi-bdr-vert-gauge1 { padding: 14px 20px 39px 16px; background: Lavender url(images/bdr_vert_gaugecolor1.png) 0 0 no-repeat; background-size:90px 175px;  border-radius:21px; }
+.hmi-bdr-horiz-gauge1 { padding: 16px 18px 44px 12px; background: Lavender url(images/bdr_horiz_gaugecolor1.png) 0 0 no-repeat; background-size:175px 100px; border-radius:21px;}

@@ -1,0 +1,225 @@
+/*!
+ * JMwidgets 
+ * Copyright (c) 2012, Exor International, Inc. & BitMethods, Inc.
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://www.jmwidgets.com
+ */
+  
+  
+ /**
+ * JMwidgets 
+ * Copyright (c) 2012, Exor International, Inc. & BitMethods, Inc.
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://www.jmwidgets.com
+ */
+ /**
+ * JMwidgets 
+ * Copyright (c) 2012, Exor International, Inc. & BitMethods, Inc.
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://www.jmwidgets.com
+ */
+ 
+ 
+.hmi-fx-shadow { box-shadow: 10px 15px 20px #aaa; -webkit-box-shadow: 10px 15px 20px #aaa; } 
+.hmi-fx-shadow-round { box-shadow: 10px 15px 20px #aaa; -webkit-box-shadow: 10px 15px 20px #888; border-radius:50%;} 
+
+/* use image instead of box-shadow until IE 10 catches up
+.hmi-fx-float:after { display:block; content:""; clear:both; margin-left:30%; width:40%; height: 2px; box-shadow: 0 40px 30px 15px #ccc; -webkit-box-shadow: 0 50px 30px 20px #aaa;   } 
+*/
+.hmi-fx-float{ display:inline-block;   } 
+.hmi-fx-float:after { display:block; content:""; clear:both; margin-left:0%; width:90%; height: 50px; background:url(images/fx_float_shadow1.png) 0 0 no-repeat; background-size:100% 100%   } 
+
+.hmi-fx-card { background-color: white; border: 4px solid #aaa;  } 
+.hmi-fx-card:after {  position:absolute; z-index:-1; content:""; width:100%; height: 12%;  background:url(images/fx_card_shadow1.png) 0 0 no-repeat; background-size:100% 100%; }
+/**
+ * JMwidgets 
+ * Copyright (c) 2012, Exor International, Inc. & BitMethods, Inc.
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://www.jmwidgets.com
+ */
+ /**
+ * JMwidgets 
+ * Copyright (c) 2012, Exor International, Inc. & BitMethods, Inc.
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://www.jmwidgets.com
+ */
+ 
+.hmi-btn {  font-family: Tahoma, Arial, sans-serif; font-size: 1em; color: #fff; position:relative;  } 
+.hmi-btn-round {padding: 10px 10px;  background: red url(images/btn_round_shiney.png) 0 0 no-repeat;  background-size:200% 100%; border-radius: 50%; -webkit-border-radius: 50%; border-width:0;}
+.hmi-btn-rect {padding: 10px 10px;  background: red url(images/btn_rect_shiney.png) 0 0 no-repeat;  background-size:200% 100%; background-color:red; border-width:0;}
+.hmi-btn-rrect { padding: 10px 10px; background: url(images/btn_rrect_shiney_a1.png) left top no-repeat, url(images/btn_rrect_shiney_c1.png) right top no-repeat, url(images/btn_rrect_shiney_b1.png) 20px top no-repeat;  background-size:20px 100%, 20px 100%, 150px 100%; background-color:red; display:inline-block; border-radius:15px; border-width:0; }
+.hmi-btn-rrect-down { background-image: url(images/btn_rrect_shiney_a2.png), url(images/btn_rrect_shiney_c2.png), url(images/btn_rrect_shiney_b2.png); background-color:red; border-radius:15px; border-width:0;}
+/**
+ * JMwidgets 
+ * Copyright (c) 2012, Exor International, Inc. & BitMethods, Inc.
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://www.jmwidgets.com
+ */
+ 
+.hmi-bdr { position:relative; display:inline-block;  } 
+.hmi-bdr-round { position:relative; padding: 21px; background: Lavender url(images/bdr_round_color.png) 0 0 no-repeat;  background-size:100% 100%; border-radius:50%; }
+.hmi-bdr-rect { position:relative; padding:  20px 20px; background: url(images/bdr_rect_color_a.png) left top no-repeat, url(images/bdr_rect_color_c.png) right top no-repeat, url(images/bdr_rect_color_b.png) 30px top no-repeat;  background-color: Lavender; background-size:30px 100%, 30px 100%, 150px 100%; }
+.hmi-bdr-rrect { position:relative; padding: 20px 20px 20px 20px; background: url(images/bdr_rrect_color_a.png) left top no-repeat, url(images/bdr_rrect_color_c.png) right top no-repeat, url(images/bdr_rrect_color_b.png) 40px top no-repeat;  background-color: Lavender; background-size:40px 100%, 40px 100%, 150px 100%; min-width:20px; border-radius:25px; }
+
+.hmi-glass-round-clock1 { display:block; background: url(images/glass_round_clock1.png) 0 0 no-repeat;  background-size:100% 100%; }
+
+.hmi-bdr-round-gauge1 { padding: 8px 16px 30px 13px; background: Lavender url(images/bdr_round_gaugecolor1.png) 0 0 no-repeat;  background-size:100% 100%; border-radius:50%; }
+.hmi-bdr-rect-gauge1 { padding: 8px 16px 30px 13px; background: Lavender url(images/bdr_rect_gaugecolor1.png) 0 0 no-repeat;  background-size:100% 100%; }
+.hmi-bdr-rrect-gauge1 { padding: 8px 16px 30px 13px; background: Lavender url(images/bdr_rrect_gaugecolor1.png) 0 0 no-repeat;  background-size:100% 100%; border-radius:20px; }
+.hmi-bdr-vert-gauge1 { padding: 14px 20px 39px 16px; background: Lavender url(images/bdr_vert_gaugecolor1.png) 0 0 no-repeat; background-size:90px 175px;  border-radius:15px; }
+.hmi-bdr-horiz-gauge1 { padding: 16px 18px 44px 12px; background: Lavender url(images/bdr_horiz_gaugecolor1.png) 0 0 no-repeat; background-size:175px 100px; border-radius:15px;}
+/**
+ * JMwidgets 
+ * Copyright (c) 2012, Exor International, Inc. & BitMethods, Inc.
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://www.jmwidgets.com
+ */
+ 
+.hmi-numeric { display: inline-block; position: relative; padding: 0; border: 0; margin: .1em .1em .1em .1em; text-align: right; font-family: Tahoma, Verdana, Arial, sans-serif; font-size: 2em; color:blue; } 
+
+/*Keypad dialog CSS*/
+#kpd {
+	position: absolute;
+	height: auto;
+	left: -9999px;
+	top: -9999px;
+	z-index: 5
+}
+#kpd #nField {
+	border: 1px solid silver;
+	-webkit-user-select: auto
+}
+#kpd button{
+    display:block;
+    float:right;
+    margin:5px 0 0 5px;
+    background-color:#f5f5f5;
+    border:1px solid #dedede;
+    border-top:1px solid #eee;
+    border-left:1px solid #eee;
+    width:26px;
+    height:26px;
+    line-height:130%;
+    text-decoration:none;
+    cursor:pointer;
+    padding:5px 10px 6px 7px; /* Links */
+}
+
+/* POSITIVE */
+#kpd button.positive{
+    color:#529214;
+    background: white url('images/ok24.png') no-repeat center center;
+
+}
+#kpd button.positive:hover{
+    background-color:#E6EFC2;
+    border:1px solid #C6D880;
+    color:#529214;
+}
+
+/* NEGATIVE */
+#kpd button.negative{
+    color:#d12f19;
+    background: white url('images/cancel24.png') no-repeat center center;
+}
+#kpd button.negative:hover{
+    background:#fbe3e4;
+    border:1px solid #fbc2c4;
+    color:#d12f19;
+}
+
+
+/**
+ * JMwidgets 
+ * Copyright (c) 2012, Exor International, Inc. & BitMethods, Inc.
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://www.jmwidgets.com
+ */
+ 
+.hmi-datetime { display: inline-block; position: relative; padding: 0; border: 0; margin: .1em .1em .1em .1em; text-align: left; font-family: Tahoma, Verdana, Arial, sans-serif; font-size: 1.5em;  } 
+
+
+
+
+/**
+ * JMwidgets 
+ * Copyright (c) 2012, Exor International, Inc. & BitMethods, Inc.
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://www.jmwidgets.com
+ */
+ 
+.hmi-msgtext { display: inline-block; position: relative; padding: 0; border: 0; margin: .1em .1em .1em .1em; text-align: left; font-family: Tahoma, Verdana, Arial, sans-serif; font-size: 1.1em;  } 
+
+/**
+ * JMwidgets 
+ * Copyright (c) 2012, Exor International, Inc. & BitMethods, Inc.
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://www.jmwidgets.com
+ */
+ 
+.hmi-ind {   } 
+.hmi-ind-round {background: red url(images/ind_round_blocky.png) 0 0 no-repeat;  background-size:100% 100%; -moz-background-size:100% 100%; border: 0; border-radius: 50%; -moz-border-radius: 50%; min-width:25px; }
+.hmi-ind-rect {background: red url(images/ind_rect_blocky.png) 0 0 no-repeat;  background-size:100% 100%; -moz-background-size: 100% 100%; border: 0; min-width:25px;}
+.hmi-ind-rrect { min-width:3em;  min-height:2em; padding: 10px 10px; background-height:100%; background: url(images/ind_rrect_blocky_a.png) left top no-repeat, url(images/ind_rrect_blocky_c.png) right top no-repeat, url(images/ind_rrect_blocky_b.png) 25px top no-repeat;  background-size:25px 100%, 25px 100%, 90% 100%; border-style:none; display:inline-block; border-radius:15px; -moz-border-radius:15px; }
+/**
+ * JMwidgets 
+ * Copyright (c) 2012, Exor International, Inc. & BitMethods, Inc.
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://www.jmwidgets.com
+ */
+ 
+.hmi-needle {   } 
+.hmi-needle-round {  background-size:100% 100%; background-repeat:no-repeat; border-radius: 50%;  }
+.hmi-needle-round canvas {display:block; background-image:url(images/needle_round_1.png);  background-position:5px 5px; background-repeat:no-repeat; }
+
+.hmi-needle-vert {  background-size:100% 100%; background-repeat:no-repeat; position:relative; }
+.hmi-needle-vert-ne { position:absolute; background-image:url(images/needle_vert_right1.png); background-repeat:no-repeat; height:15px; width:60%; background-size:100% 100%}
+
+.hmi-needle-horiz {  background-size:100% 100%; background-repeat:no-repeat; position:relative; }
+.hmi-needle-horiz-ne { position:absolute; background-image:url(images/needle_horiz_up1.png); background-repeat:no-repeat; height:60%; width:15px; background-size:100% 100%}
+/**
+ * JMwidgets 
+ * Copyright (c) 2012, Exor International, Inc. & BitMethods, Inc.
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://www.jmwidgets.com
+ */
+ 
+.hmi-knob {   } 
+.hmi-knob-round {  background-size:100% 100%; background-repeat:no-repeat;  }
+.hmi-knob-round canvas {display:block; background-image:url(images/knob_round_blkpl.png); background-position:51.15px 40.15px;  background-repeat:no-repeat;}
+/**
+ * JMwidgets 
+ * Copyright (c) 2012, Exor International, Inc. & BitMethods, Inc.
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://www.jmwidgets.com
+ */
+ 
+.hmi-bar { position:relative;   } 
+.hmi-bar-horiz { }
+.hmi-bar-horiz-bar { position:absolute; background-color:red; background-image:url(images/bar_round_horiz_1.png); width:auto; height:100%; background-size:100% 100%}
+
+.hmi-bar-vert { }
+.hmi-bar-vert-bar { position:absolute; background-color:red; background-image:url(images/bar_round_vert_1.png); width:100%; height:auto; background-size:100% 100%}
+/**
+ * JMwidgets 
+ * Copyright (c) 2012, Exor International, Inc. & BitMethods, Inc.
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://www.jmwidgets.com
+ */
+ 
+.hmi-slider { position:relative;   } 
+.hmi-slider-horiz {margin-left:25px; margin-right:25px; padding-left:10px; padding-right:10px; background: url(images/sldr_horiz_color_a.png) left top no-repeat, url(images/sldr_horiz_color_c.png) right top no-repeat,  url(images/sldr_horiz_color_b.png) 30px top no-repeat; background-size:30px 100%, 30px 100%, 145px 100%; background-color:Lavender; border-radius:10px}
+.hmi-slider-horiz-thmb { position:absolute; background-image:url(images/thmb_black_horiz_1.png); width:50px; height:100%; background-size:100% 100%}
+
+.hmi-slider-vert {margin-top:25px; margin-bottom:25px; padding-top:10px; padding-bottom:10px; background: url(images/sldr_vert_color_a.png) left top no-repeat, url(images/sldr_vert_color_c.png) left bottom no-repeat,  url(images/sldr_vert_color_b.png) left 32px no-repeat ; background-size:100% 32px, 100% 32px, 100% 145px; background-color:Lavender; border-radius:10px}
+.hmi-slider-vert-thmb { position:absolute; background-image:url(images/thmb_black_vert_1.png); height:50px; width:100%; background-size:100% 100%}
+/**
+ * JMwidgets 
+ * Copyright (c) 2012, Exor International, Inc. & BitMethods, Inc.
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://www.jmwidgets.com
+ */
+ 
+.hmi-analogclock { position:relative  } 
+.hmi-analogclock-round {background: url(images/clock_round_simple.png) 0 0 no-repeat;  background-size:232px 232px;   }
+.hmi-analogclock canvas {display:block; background-image:url(images/needle_hours_1.png),url(images/needle_mins_1.png),url(images/needle_secs_1.png);  background-position:33px 6.6px,26px 4.4px,13px 4.4px; background-repeat:no-repeat,no-repeat,no-repeat; }

@@ -1,0 +1,11 @@
+/**
+ * JMwidgets 
+ * Copyright (c) 2012, Exor International, Inc. & BitMethods, Inc.
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://www.jmwidgets.com
+ */
+ 
+.hmi-ind {   } 
+.hmi-ind-round {background: red url(images/ind_round_blocky.png) 0 0 no-repeat;  background-size:100% 100%; -moz-background-size:100% 100%; border: 0; border-radius: 50%; -moz-border-radius: 50%; min-width:25px; }
+.hmi-ind-rect {background: red url(images/ind_rect_blocky.png) 0 0 no-repeat;  background-size:100% 100%; -moz-background-size: 100% 100%; border: 0; min-width:25px;}
+.hmi-ind-rrect { min-width:3em;  min-height:2em; padding: 10px 10px; background-height:100%; background: url(images/ind_rrect_blocky_a.png) left top no-repeat, url(images/ind_rrect_blocky_c.png) right top no-repeat, url(images/ind_rrect_blocky_b.png) 25px top no-repeat;  background-size:25px 100%, 25px 100%, 90% 100%; border-style:none; display:inline-block; border-radius:15px; -moz-border-radius:15px; }

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>HMI Needle Demo</title>
+
+		<!-- JMWidget styles -->
+	<link rel="stylesheet" href="../css/base/hmi.base.css">
+	<link rel="stylesheet" href="../css/hmi.base-allstyles.css">	
+		<!-- jQuery classes -->
+	<script src="../external/jquery-1.8.0.min.js"></script>
+	<script src="../external/jquery-ui-1.8.23.custom.min.js"></script>
+		<!-- JMWidget classes -->
+	<script src="../js/hmi.core.js"></script>
+	<script src="../js/hmi.widget.js"></script>
+	<script src="../js/hmi.page.js"></script>
+	<script src="../js/hmi.needle.js"></script>
+	<script src="../js/hmi.border.js"></script>
+	<script src="../js/hmi.slider.js"></script>	
+	<script src="../js/jq.hmi.core.js"></script>
+	<script src="../js/jq.hmi.widget.js"></script>
+	<script src="../js/jq.hmi.page.js"></script>
+	<script src="../js/jq.hmi.border.js"></script>
+	<script src="../js/jq.hmi.needle.js"></script>
+	<script src="../js/jq.hmi.slider.js"></script>
+	
+	<script>
+	$(function() {
+		$("#page1").hmiPage();
+		$("#bdr1").hmiBorder({shape:'round', style:'gauge1-whpl'} );	
+		$("#needle1").hmiNeedle( {type:'round', value:0, startAngle:25, stopAngle:155, initAngle:180, min:0, max:100, ctr:{dy:40}} );	
+		$("#slider1").hmiSlider({type:'horiz', style:'whpl' });	
+		
+		$("#needle1").hmiAttach("#slider1", { tag:'value', attr:'value' });
+	});
+	</script>
+</head>
+<body id="page1">
+<br />
+<div id="bdr1">
+	<div id="needle1" style="width:150px; height:150px; background-image:url(images/needle_bkgd_round_1.png)"></div>
+</div>
+<br />
+<br />
+	<div id="slider1" style="width:150px; height:30px"></div>
+</body>
+<br />
+<i>Note: labels, tick marks and color bar are a single background image</i>
+</html>
