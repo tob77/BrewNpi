@@ -1093,7 +1093,7 @@ def ProcessControl(dataLoggingStatus, pumpStatus, waterValveStatus, burnerStatus
                     if temperature >= (pidSp + shutOffTempSp):
                         burnerShutOff = True
                         burner1.stop()
-                    if burnerShutOff and temperature < pidSp:
+                    if burnerShutOff and temperature < (pidSp + shutOffTempSp / 2.0):
                         burnerShutOff = False
                         pidController.cmdInitialize(ignitionCv, cvMinSp)
                         burner1.start()
